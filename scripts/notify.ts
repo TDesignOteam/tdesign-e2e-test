@@ -1,4 +1,4 @@
-import { batchSendWxRobotMarkdown } from 't-comm/es/wecom-robot';
+import { batchSendWxRobotMarkdown } from 't-comm';
 import * as fs from 'fs';
 import * as path from 'path';
 
