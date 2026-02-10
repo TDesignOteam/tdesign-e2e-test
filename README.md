@@ -25,7 +25,14 @@ tdesign-e2e/
     ├── tdesign.spec.ts            # 测试入口（自动根据配置生成用例）
     ├── config/
     │   ├── types.ts               # 类型定义（PageConfig / PageAction 等）
-    │   └── pages.config.ts        # 📌 页面测试配置（核心配置文件）
+    │   ├── pages.config.ts        # 📌 配置汇总入口（合并所有模块）
+    │   └── modules/               # 📂 按模块拆分的配置目录
+    │       ├── index.ts           # 模块统一导出
+    │       ├── home.ts            # TDesign 官网首页
+    │       ├── uniapp.ts          # UniApp 相关页面
+    │       ├── miniprogram.ts     # 小程序相关页面
+    │       ├── vue-next.ts        # Vue Next（桌面端 Vue3）
+    │       └── mobile-vue.ts      # Mobile Vue（移动端）
     └── utils/
         └── helpers.ts             # 检测工具函数（白屏检测、元素检测等）
 ```
@@ -58,7 +65,61 @@ npm run test:debug
 
 ## 📝 配置说明
 
-所有测试用例通过 `tests/config/pages.config.ts` 配置，框架会自动为每条配置生成一个独立的测试用例。
+测试配置按模块拆分，位于 `tests/config/modules/` 目录下，由 `pages.config.ts` 统一汇总。框架会自动为每条配置生成一个独立的测试用例。
+
+### 模块化配置
+
+配置按 TDesign 子站/框架拆分为独立模块：
+
+| 模块文件                 | 对应站点                | 说明                       |
+| ------------------------ | ----------------------- | -------------------------- |
+| `modules/home.ts`        | TDesign 官网首页        | 首页白屏检测、导航菜单交互 |
+| `modules/uniapp.ts`      | UniApp                  | UniApp 概览页、组件跳转    |
+| `modules/miniprogram.ts` | 小程序                  | 小程序概览页、组件跳转     |
+| `modules/vue-next.ts`    | Vue Next（桌面端 Vue3） | 组件页面、路由导航         |
+| `modules/mobile-vue.ts`  | Mobile Vue（移动端）    | 移动端概览页、组件页面     |
+
+### 新增模块
+
+以新增 React 模块为例，只需 3 步：
+
+**第 1 步**：在 `tests/config/modules/` 下创建 `react.ts`
+
+```typescript
+import { type PageConfig } from '../types';
+
+const reactPages: PageConfig[] = [
+  {
+    name: 'React - Button 组件',
+    url: 'https://tdesign.tencent.com/react/components/button',
+    whiteScreenCheck: true,
+    expectedSelectors: ['td-doc-layout', '.TDesign-doc-demo'],
+  },
+];
+
+export default reactPages;
+```
+
+**第 2 步**：在 `modules/index.ts` 中导出
+
+```typescript
+export { default as reactPages } from './react';
+```
+
+**第 3 步**：在 `pages.config.ts` 中导入并合并
+
+```typescript
+import { reactPages } from './modules';
+
+const config: PageConfig[] = [
+  ...homePages,
+  ...uniappPages,
+  ...miniprogramPages,
+  ...vueNextPages,
+  ...mobileVuePages,
+  ...reactPages,  // 新增
+];
+```
 
 ### 基础配置字段
 
