@@ -59,6 +59,25 @@ const config: PageConfig[] = [
     },
   },
 
+   {
+    name: '从首页点击跳转到组件页',
+    url: 'https://tdesign.tencent.com/miniprogram/overview',
+    whiteScreenCheck: true,
+    actions: [
+      {
+        type: 'click',
+        // 穿透组合选择器：先找到 td-header，再进入其 Shadow DOM 查找导航链接
+        selector: 'td-doc-aside >>> a[href*="/miniprogram/components/button"]',
+        description: '点击 button 组件',
+      },
+    ],
+    // 跳转后的检测
+    afterActionCheck: {
+      expectedSelectors: ['iframe[src*="/miniprogram/live#]'],
+      whiteScreenCheck: true,
+    },
+  },
+
   // 4. 带路由导航的 SPA 页面
   {
     name: '路由导航测试',
