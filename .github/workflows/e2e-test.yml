@@ -42,8 +42,9 @@ jobs:
         env:
           CI: true
         run: |
+          set -o pipefail
           mkdir -p test-results
-          pnpm test -- --json --outputFile=test-results/results.json 2>&1 | tee test-results/output.log
+          pnpm test:ci 2>&1 | tee test-results/output.log
           echo "exit_code=$?" >> $GITHUB_OUTPUT
 
       - name: 发送企业微信通知（测试失败时）
