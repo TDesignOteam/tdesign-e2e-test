@@ -28,7 +28,7 @@ const miniprogramPages: PageConfig[] = [
       },
     ],
     afterActionCheck: {
-      expectedSelectors: ['iframe[src*="/miniprogram/live#"]'],
+      expectedSelectors: ['iframe[src*="//tdesign.tencent.com/miniprogram/live/m2w/program/miniprogram/#!pages/button/button.html"]'],
       whiteScreenCheck: true,
     },
   },
