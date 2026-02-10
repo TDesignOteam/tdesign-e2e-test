@@ -11,9 +11,10 @@ function delay(ms: number): Promise<void> {
 /**
  * 在页面上下文中递归穿透 Shadow DOM 查找元素
  *
- * 支持两种选择器格式：
+ * 支持三种选择器格式：
  * 1. 普通选择器：如 "header"、".TDesign-header"，会自动递归 Shadow DOM 查找
  * 2. 穿透组合选择器：如 "td-header >>> .TDesign-header"，先找到宿主元素再进入其 Shadow DOM 查找
+ * 3. 文本选择器：如 "text=Button 按钮"，通过元素文本内容匹配（自动穿透 Shadow DOM）
  */
 async function deepQuerySelector(page: Page, selector: string): Promise<any> {
   return page.evaluateHandle((sel: string) => {
@@ -53,6 +54,63 @@ async function deepQuerySelector(page: Page, selector: string): Promise<any> {
         }
       }
       return null;
+    }
+
+    /**
+     * 通过文本内容递归穿透 Shadow DOM 查找元素
+     * 会查找直接文本内容（不含子元素文本）最匹配的叶子元素
+     */
+    function deepFindByText(root: Document | ShadowRoot | Element, text: string): Element | null {
+      const allElements = root.querySelectorAll('*');
+      for (const el of allElements) {
+        // 检查当前元素的直接文本内容（排除子元素的文本）
+        // 优先匹配叶子节点或文本直接在此元素上的情况
+        const directText = getDirectText(el);
+        if (directText && directText.includes(text)) {
+          return el;
+        }
+
+        // 递归进入 Shadow DOM
+        if (el.shadowRoot) {
+          const result = deepFindByText(el.shadowRoot, text);
+          if (result) return result;
+        }
+
+        // 兼容 slot 分发内容
+        if (el instanceof HTMLSlotElement) {
+          const assigned = el.assignedElements({ flatten: true });
+          for (const slotEl of assigned) {
+            const slotText = getDirectText(slotEl);
+            if (slotText && slotText.includes(text)) {
+              return slotEl;
+            }
+            if (slotEl.shadowRoot) {
+              const result = deepFindByText(slotEl.shadowRoot, text);
+              if (result) return result;
+            }
+          }
+        }
+      }
+      return null;
+    }
+
+    /**
+     * 获取元素的直接文本内容（不包含子元素的文本）
+     */
+    function getDirectText(el: Element): string {
+      let text = '';
+      for (const node of el.childNodes) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          text += node.textContent || '';
+        }
+      }
+      return text.trim();
+    }
+
+    // 支持 "text=" 文本选择器
+    if (sel.startsWith('text=')) {
+      const searchText = sel.slice(5).trim();
+      return deepFindByText(document, searchText);
     }
 
     // 支持 ">>>" 穿透组合选择器

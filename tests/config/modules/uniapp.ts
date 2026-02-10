@@ -32,6 +32,29 @@ const uniappPages: PageConfig[] = [
       whiteScreenCheck: true,
     },
   },
+
+  // 示例
+  {
+    name: 'UniApp - Button Demo',
+    url: 'https://tdesign.tencent.com/uniapp/live/#',
+    whiteScreenCheck: true,
+    actions: [
+      {
+        type: 'click',
+        selector: 'text=基础',
+        description: '点击 Button 组件',
+      },
+      {
+        type: 'click',
+        selector: 'text=Button 按钮',
+        description: '点击 Button 组件',
+      },
+    ],
+    afterActionCheck: {
+      expectedSelectors: ['.t-button__content'],
+      whiteScreenCheck: true,
+    },
+  },
 ];
 
 export default uniappPages;
