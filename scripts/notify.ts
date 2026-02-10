@@ -110,7 +110,7 @@ async function main() {
   // 构建 Markdown 消息
   const now = new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
 
-  let content = `## ❌ TDesign E2E 测试失败告警\n\n`;
+  let content = `## ❌ TDesign E2E 测试失败告警<@guowangyang>\n\n`;
   content += `**时间**: ${now}\n`;
 
   if (testResult) {
