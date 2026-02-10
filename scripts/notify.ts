@@ -36,8 +36,8 @@ interface JestTestResult {
 }
 
 async function main() {
-  const webhookUrl = process.env.WECOM_WEBHOOK_URL;
-  const chatIdEnv = process.env.WECOM_CHAT_ID;
+  const webhookUrl = process.env.WECOM_WEBHOOK_URL || '';
+  const chatIdEnv = process.env.WECOM_CHAT_ID || 'ALL';
   const githubRunUrl = process.env.GITHUB_RUN_URL || '';
 
   if (!webhookUrl) {
