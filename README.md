@@ -284,24 +284,145 @@ interface PageAction {
 }
 ```
 
-## 🔍 白屏检测原理
+## 🔍 核心检测流程
 
-白屏检测通过以下 4 层策略判断页面是否正常渲染：
+### 白屏检测流程
 
+白屏检测通过 4 层递进策略判断页面是否正常渲染，任一层检测失败即判定为白屏：
+
+```mermaid
+flowchart TD
+    Start(["开始白屏检测"]) --> Step1{"1️⃣ body.children.length > 0？"}
+
+    Step1 -->|❌ 无子元素| Fail1["❌ 判定白屏<br>页面 body 没有子元素"]
+    Step1 -->|✅ 有子元素| Step2{"2️⃣ body.innerHTML.length > 50？"}
+
+    Step2 -->|❌ 内容过短| Fail2["❌ 判定白屏<br>页面内容长度过短"]
+    Step2 -->|✅ 内容充足| Step3{"3️⃣ 存在可见内容？<br>递归穿透 Shadow DOM 检查：<br>文字 / 图片 / canvas / svg / video"}
+
+    Step3 -->|❌ 无可见内容| Fail3["❌ 判定白屏<br>页面没有可见内容"]
+    Step3 -->|✅ 有可见内容| Step4{"4️⃣ 存在应用根挂载点？<br>#app / #root / #__nuxt / #__next<br>或 Web Components 自定义元素"}
+
+    Step4 -->|❌ 无挂载点| Fail4["❌ 判定白屏<br>找不到应用根挂载点"]
+    Step4 -->|✅ 有挂载点| Pass(["✅ 白屏检测通过"])
+
+    style Fail1 fill:#ffcccc,stroke:#cc0000
+    style Fail2 fill:#ffcccc,stroke:#cc0000
+    style Fail3 fill:#ffcccc,stroke:#cc0000
+    style Fail4 fill:#ffcccc,stroke:#cc0000
+    style Pass fill:#ccffcc,stroke:#009900
 ```
-┌─────────────────────────────────────────────────┐
-│  1. body 子元素数量 > 0                          │
-├─────────────────────────────────────────────────┤
-│  2. body innerHTML 长度 > 50 字符                │
-├─────────────────────────────────────────────────┤
-│  3. 存在可见内容（文字 / 图片 / canvas / svg）     │
-├─────────────────────────────────────────────────┤
-│  4. SPA 根挂载点有内容                            │
-│     (#app / #root / #__nuxt / #__next 等)        │
-└─────────────────────────────────────────────────┘
+
+### 元素丢失检测流程
+
+元素检测支持 Shadow DOM 穿透查找，通过轮询等待机制确保元素可见：
+
+```mermaid
+flowchart TD
+    Start(["开始元素丢失检测<br>expectedSelectors 列表"]) --> Loop{"遍历每个 selector"}
+
+    Loop --> WaitVisible["waitForVisible<br>超时时间：10s，轮询间隔：300ms"]
+
+    WaitVisible --> DeepQuery["deepQuerySelector<br>递归穿透 Shadow DOM 查找元素"]
+
+    DeepQuery --> Found{"元素存在？"}
+    Found -->|❌ 未找到| Retry{"是否超时？"}
+    Retry -->|未超时| Sleep["等待 300ms"] --> DeepQuery
+    Retry -->|已超时 10s| Fail["❌ 检测失败<br>期望元素不存在或不可见"]
+
+    Found -->|✅ 找到| CheckVisible{"元素可见？<br>rect.width > 0<br>rect.height > 0<br>visibility ≠ hidden<br>display ≠ none<br>opacity ≠ 0"}
+
+    CheckVisible -->|❌ 不可见| Retry
+    CheckVisible -->|✅ 可见| Next{"还有下一个 selector？"}
+
+    Next -->|是| Loop
+    Next -->|否| Pass(["✅ 所有元素检测通过"])
+
+    style Fail fill:#ffcccc,stroke:#cc0000
+    style Pass fill:#ccffcc,stroke:#009900
 ```
 
-任一层检测失败即判定为白屏。
+### 执行操作序列流程
+
+操作序列按配置顺序逐一执行，支持 5 种操作类型和时序控制：
+
+```mermaid
+flowchart TD
+    Start(["开始执行操作序列<br>actions 列表"]) --> Loop{"遍历每个 action"}
+
+    Loop --> WaitBefore{"waitBefore > 0？"}
+    WaitBefore -->|是| DelayBefore["⏳ 等待 waitBefore 毫秒"] --> Switch
+    WaitBefore -->|否| Switch
+
+    Switch{"action.type"} -->|click| Click
+    Switch -->|hover| Hover
+    Switch -->|navigate| Navigate
+    Switch -->|scroll| Scroll
+    Switch -->|input| Input
+
+    subgraph Click ["🖱️ click 操作"]
+        C1["waitForVisible 等待元素可见"] --> C2["deepQuerySelector 穿透查找"]
+        C2 --> C3["scrollIntoView 滚动到视口"]
+        C3 --> C4["计算元素中心坐标"]
+        C4 --> C5["page.mouse.click 真实鼠标点击"]
+        C5 --> C6{"是 a 标签 / 有 href？"}
+        C6 -->|是| C7["等待导航完成 + 网络空闲"]
+        C6 -->|否| C8["等待 1s 渲染"]
+    end
+
+    subgraph Hover ["🎯 hover 操作"]
+        H1["waitForVisible 等待元素可见"] --> H2["deepQuerySelector 穿透查找"]
+        H2 --> H3["获取元素中心坐标"]
+        H3 --> H4["page.mouse.move 移动鼠标"]
+    end
+
+    subgraph Navigate ["🔀 navigate 操作"]
+        N1["page.goto targetUrl"]
+        N1 --> N2["等待 domcontentloaded"]
+    end
+
+    subgraph Scroll ["📜 scroll 操作"]
+        S1["window.scrollBy<br>滚动 scrollY 像素（默认 500）"]
+    end
+
+    subgraph Input ["⌨️ input 操作"]
+        I1["waitForVisible 等待元素可见"] --> I2["deepQuerySelector 穿透查找"]
+        I2 --> I3["focus 聚焦 + 清空内容"]
+        I3 --> I4["page.keyboard.type 逐字输入"]
+    end
+
+    C7 --> WaitAfter
+    C8 --> WaitAfter
+    H4 --> WaitAfter
+    N2 --> WaitAfter
+    S1 --> WaitAfter
+    I4 --> WaitAfter
+
+    WaitAfter{"waitAfter > 0？"}
+    WaitAfter -->|是| DelayAfter["⏳ 等待 waitAfter 毫秒"] --> Next
+    WaitAfter -->|否| Next
+
+    Next{"还有下一个 action？"}
+    Next -->|是| Loop
+    Next -->|否| CheckAfter{"afterActionCheck？"}
+
+    CheckAfter -->|是| AfterCheck
+    CheckAfter -->|否| Pass(["✅ 操作序列执行完毕"])
+
+    subgraph AfterCheck ["🔍 操作后检查"]
+        AC1{"whiteScreenCheck？"} -->|是| AC2["执行白屏检测"]
+        AC1 -->|否| AC3
+        AC2 --> AC3{"expectedSelectors？"}
+        AC3 -->|是| AC4["执行元素丢失检测"]
+        AC3 -->|否| AC5
+        AC4 --> AC5{"expectedUrlPattern？"}
+        AC5 -->|是| AC6["正则匹配当前 URL"]
+        AC5 -->|否| AC7(["✅ 操作后检查通过"])
+        AC6 --> AC7
+    end
+
+    style Pass fill:#ccffcc,stroke:#009900
+```
 
 ## ⚙️ 进阶配置
 

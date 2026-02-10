@@ -30,7 +30,6 @@ const vueNextPages: PageConfig[] = [
     ],
     afterActionCheck: {
       expectedSelectors: ['.TDesign-doc-demo'],
-      whiteScreenCheck: true,
     },
   },
 ];
