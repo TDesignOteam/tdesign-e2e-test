@@ -1,0 +1,1470 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e10]:
+        - img [ref=e14] [cursor=pointer]
+        - link "TDesign" [ref=e25] [cursor=pointer]:
+          - /url: /
+          - img [ref=e26]
+      - generic [ref=e39]:
+        - generic [ref=e41]:
+          - button "AI 搜索 AI 搜索" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - generic [ref=e47]: AI 搜索 AI 搜索
+          - generic [ref=e50]:
+            - combobox "search input" [ref=e52]
+            - img [ref=e54]
+        - link "设计" [ref=e56] [cursor=pointer]:
+          - /url: /design
+        - generic [ref=e59] [cursor=pointer]:
+          - text: 基础组件
+          - img [ref=e61]
+        - link "页面模板" [ref=e63] [cursor=pointer]:
+          - /url: https://tdesign.tencent.com/starter/
+        - link "资源" [ref=e64] [cursor=pointer]:
+          - /url: /source
+        - link "关于" [ref=e65] [cursor=pointer]:
+          - /url: /about/introduce
+        - img [ref=e68] [cursor=pointer]
+        - link [ref=e70] [cursor=pointer]:
+          - /url: https://github.com/Tencent/tdesign-vue-next
+          - img [ref=e72]
+        - generic [ref=e75]:
+          - generic [ref=e77] [cursor=pointer]:
+            - img
+          - generic [ref=e78] [cursor=pointer]:
+            - img
+  - generic [ref=e79]:
+    - generic:
+      - generic "Vue Next for Web":
+        - complementary [ref=e80]:
+          - generic [ref=e81]:
+            - heading "Vue Next for Web" [level=2] [ref=e82]
+            - generic [ref=e87]:
+              - textbox "请选择" [ref=e88] [cursor=pointer]: 1_18_2
+              - img [ref=e90]
+            - generic [ref=e92]:
+              - generic [ref=e93]: 开始
+              - generic [ref=e94]:
+                - link "快速开始" [ref=e96] [cursor=pointer]:
+                  - /url: /vue-next/getting-started
+                - link "最佳实践" [ref=e98] [cursor=pointer]:
+                  - /url: /vue-next/quick-start
+                - link "更新日志" [ref=e100] [cursor=pointer]:
+                  - /url: /vue-next/changelog
+                - link "组件概览" [ref=e102] [cursor=pointer]:
+                  - /url: /vue-next/overview
+            - generic [ref=e103]:
+              - generic [ref=e104]: 全局配置
+              - generic [ref=e105]:
+                - link "全局特性配置" [ref=e107] [cursor=pointer]:
+                  - /url: /vue-next/components/config-provider
+                - link "自定义主题" [ref=e109] [cursor=pointer]:
+                  - /url: /vue-next/custom-theme
+                - link "深色模式" [ref=e111] [cursor=pointer]:
+                  - /url: /vue-next/dark-mode
+            - generic [ref=e112]:
+              - generic [ref=e113]: 高阶组件
+              - link "AI Chat 对话" [ref=e116] [cursor=pointer]:
+                - /url: /chat
+            - generic [ref=e117]:
+              - generic [ref=e118]: 基础
+              - generic [ref=e119]:
+                - link "Button 按钮" [ref=e121] [cursor=pointer]:
+                  - /url: /vue-next/components/button
+                - link "Icon 图标" [ref=e123] [cursor=pointer]:
+                  - /url: /vue-next/components/icon
+                - link "Link 链接" [ref=e125] [cursor=pointer]:
+                  - /url: /vue-next/components/link
+                - link "Typography 排版" [ref=e127] [cursor=pointer]:
+                  - /url: /vue-next/components/typography
+            - generic [ref=e128]:
+              - generic [ref=e129]: 布局
+              - generic [ref=e130]:
+                - link "Divider 分割线" [ref=e132] [cursor=pointer]:
+                  - /url: /vue-next/components/divider
+                - link "Grid 栅格" [ref=e134] [cursor=pointer]:
+                  - /url: /vue-next/components/grid
+                - link "Layout 布局" [ref=e136] [cursor=pointer]:
+                  - /url: /vue-next/components/layout
+                - link "Space 间距" [ref=e138] [cursor=pointer]:
+                  - /url: /vue-next/components/space
+            - generic [ref=e139]:
+              - generic [ref=e140]: 导航
+              - generic [ref=e141]:
+                - link "Affix 固钉" [ref=e143] [cursor=pointer]:
+                  - /url: /vue-next/components/affix
+                - link "Anchor 锚点" [ref=e145] [cursor=pointer]:
+                  - /url: /vue-next/components/anchor
+                - link "BackTop 回到顶部" [ref=e147] [cursor=pointer]:
+                  - /url: /vue-next/components/back-top
+                - link "Breadcrumb 面包屑" [ref=e149] [cursor=pointer]:
+                  - /url: /vue-next/components/breadcrumb
+                - link "Dropdown 下拉菜单" [ref=e151] [cursor=pointer]:
+                  - /url: /vue-next/components/dropdown
+                - link "Menu 导航菜单" [ref=e153] [cursor=pointer]:
+                  - /url: /vue-next/components/menu
+                - link "Pagination 分页" [ref=e155] [cursor=pointer]:
+                  - /url: /vue-next/components/pagination
+                - link "Steps 步骤条" [ref=e157] [cursor=pointer]:
+                  - /url: /vue-next/components/steps
+                - link "StickyTool 侧边栏" [ref=e159] [cursor=pointer]:
+                  - /url: /vue-next/components/sticky-tool
+                - link "Tabs 选项卡" [ref=e161] [cursor=pointer]:
+                  - /url: /vue-next/components/tabs
+            - generic [ref=e162]:
+              - generic [ref=e163]: 输入
+              - generic [ref=e164]:
+                - link "AutoComplete 自动填充" [ref=e166] [cursor=pointer]:
+                  - /url: /vue-next/components/auto-complete
+                - link "Cascader 级联组件" [ref=e168] [cursor=pointer]:
+                  - /url: /vue-next/components/cascader
+                - link "Checkbox 多选框" [ref=e170] [cursor=pointer]:
+                  - /url: /vue-next/components/checkbox
+                - link "ColorPicker 颜色选择器" [ref=e172] [cursor=pointer]:
+                  - /url: /vue-next/components/color-picker
+                - link "DatePicker 日期选择器" [ref=e174] [cursor=pointer]:
+                  - /url: /vue-next/components/date-picker
+                - link "Form 表单" [ref=e176] [cursor=pointer]:
+                  - /url: /vue-next/components/form
+                - link "Input 输入框" [ref=e178] [cursor=pointer]:
+                  - /url: /vue-next/components/input
+                - link "InputAdornment 输入装饰器" [ref=e180] [cursor=pointer]:
+                  - /url: /vue-next/components/input-adornment
+                - link "InputNumber 数字输入框" [ref=e182] [cursor=pointer]:
+                  - /url: /vue-next/components/input-number
+                - link "TagInput 标签输入框" [ref=e184] [cursor=pointer]:
+                  - /url: /vue-next/components/tag-input
+                - link "Radio 单选框" [ref=e186] [cursor=pointer]:
+                  - /url: /vue-next/components/radio
+                - link "RangeInput 范围输入框" [ref=e188] [cursor=pointer]:
+                  - /url: /vue-next/components/range-input
+                - link "Select 选择器" [ref=e190] [cursor=pointer]:
+                  - /url: /vue-next/components/select
+                - link "SelectInput 筛选器输入框" [ref=e192] [cursor=pointer]:
+                  - /url: /vue-next/components/select-input
+                - link "Slider 滑块" [ref=e194] [cursor=pointer]:
+                  - /url: /vue-next/components/slider
+                - link "Switch 开关" [ref=e196] [cursor=pointer]:
+                  - /url: /vue-next/components/switch
+                - link "Textarea 多行文本框" [ref=e198] [cursor=pointer]:
+                  - /url: /vue-next/components/textarea
+                - link "Transfer 穿梭框" [ref=e200] [cursor=pointer]:
+                  - /url: /vue-next/components/transfer
+                - link "TimePicker 时间选择器" [ref=e202] [cursor=pointer]:
+                  - /url: /vue-next/components/time-picker
+                - link "TreeSelect 树选择" [ref=e204] [cursor=pointer]:
+                  - /url: /vue-next/components/tree-select
+                - link "Upload 上传" [ref=e206] [cursor=pointer]:
+                  - /url: /vue-next/components/upload
+            - generic [ref=e207]:
+              - generic [ref=e208]: 数据展示
+              - generic [ref=e209]:
+                - link "Avatar 头像" [ref=e211] [cursor=pointer]:
+                  - /url: /vue-next/components/avatar
+                - link "Badge 徽标" [ref=e213] [cursor=pointer]:
+                  - /url: /vue-next/components/badge
+                - link "Calendar 日历" [ref=e215] [cursor=pointer]:
+                  - /url: /vue-next/components/calendar
+                - link "Card 卡片" [ref=e217] [cursor=pointer]:
+                  - /url: /vue-next/components/card
+                - link "Collapse 折叠面板" [ref=e219] [cursor=pointer]:
+                  - /url: /vue-next/components/collapse
+                - link "Comment 评论" [ref=e221] [cursor=pointer]:
+                  - /url: /vue-next/components/comment
+                - link "Descriptions 描述" [ref=e223] [cursor=pointer]:
+                  - /url: /vue-next/components/descriptions
+                - link "Empty 空状态" [ref=e225] [cursor=pointer]:
+                  - /url: /vue-next/components/empty
+                - link "Image 图片" [ref=e227] [cursor=pointer]:
+                  - /url: /vue-next/components/image
+                - link "ImageViewer 图片预览" [ref=e229] [cursor=pointer]:
+                  - /url: /vue-next/components/image-viewer
+                - link "List 列表" [ref=e231] [cursor=pointer]:
+                  - /url: /vue-next/components/list
+                - link "Loading 加载" [ref=e233] [cursor=pointer]:
+                  - /url: /vue-next/components/loading
+                - link "Progress 进度条" [ref=e235] [cursor=pointer]:
+                  - /url: /vue-next/components/progress
+                - link "QRCode 二维码" [ref=e237] [cursor=pointer]:
+                  - /url: /vue-next/components/qrcode
+                - link "Skeleton 骨架屏" [ref=e239] [cursor=pointer]:
+                  - /url: /vue-next/components/skeleton
+                - link "Statistic 统计数值" [ref=e241] [cursor=pointer]:
+                  - /url: /vue-next/components/statistic
+                - link "Swiper 轮播框" [ref=e243] [cursor=pointer]:
+                  - /url: /vue-next/components/swiper
+                - link "Table 表格" [ref=e245] [cursor=pointer]:
+                  - /url: /vue-next/components/table
+                - link "Tag 标签" [ref=e247] [cursor=pointer]:
+                  - /url: /vue-next/components/tag
+                - link "Timeline 时间轴" [ref=e249] [cursor=pointer]:
+                  - /url: /vue-next/components/timeline
+                - link "Tooltip 文字提示" [ref=e251] [cursor=pointer]:
+                  - /url: /vue-next/components/tooltip
+                - link "Tree 树" [ref=e253] [cursor=pointer]:
+                  - /url: /vue-next/components/tree
+                - link "Watermark 水印" [ref=e255] [cursor=pointer]:
+                  - /url: /vue-next/components/watermark
+                - link "Rate 评分" [ref=e257] [cursor=pointer]:
+                  - /url: /vue-next/components/rate
+            - generic [ref=e258]:
+              - generic [ref=e259]: 消息提醒
+              - generic [ref=e260]:
+                - link "Alert 警告提醒" [ref=e262] [cursor=pointer]:
+                  - /url: /vue-next/components/alert
+                - link "Dialog 对话框" [ref=e264] [cursor=pointer]:
+                  - /url: /vue-next/components/dialog
+                - link "Drawer 抽屉" [ref=e266] [cursor=pointer]:
+                  - /url: /vue-next/components/drawer
+                - link "Guide 引导" [ref=e268] [cursor=pointer]:
+                  - /url: /vue-next/components/guide
+                - link "Message 全局提示" [ref=e270] [cursor=pointer]:
+                  - /url: /vue-next/components/message
+                - link "Notification 消息通知" [ref=e272] [cursor=pointer]:
+                  - /url: /vue-next/components/notification
+                - link "Popconfirm 气泡确认框" [ref=e274] [cursor=pointer]:
+                  - /url: /vue-next/components/popconfirm
+                - link "Popup 弹出层" [ref=e276] [cursor=pointer]:
+                  - /url: /vue-next/components/popup
+      - generic [ref=e278]:
+        - generic [ref=e279]:
+          - iframe
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - generic:
+                - img [ref=e284]
+                - img [ref=e286]
+                - img [ref=e288]
+                - img [ref=e290]
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - heading "Input 输入框" [level=1] [ref=e294]
+                - button "更新日志" [ref=e295] [cursor=pointer]:
+                  - img [ref=e297]
+                  - generic [ref=e300]: 更新日志
+              - generic [ref=e302]: 用于承载用户信息录入的文本框，常用于表单、对话框等场景，对不同内容的信息录入，可拓展形成多种信息录入形式。
+          - generic [ref=e305]:
+            - generic [ref=e306] [cursor=pointer]:
+              - img [ref=e308]
+              - generic [ref=e310]: Issue
+            - generic [ref=e311] [cursor=pointer]:
+              - img [ref=e313]
+              - generic [ref=e317]: Open
+            - generic [ref=e318] [cursor=pointer]:
+              - img [ref=e320]
+              - generic [ref=e322]: Closed
+        - generic [ref=e324]:
+          - generic:
+            - generic [ref=e326] [cursor=pointer]:
+              - generic [ref=e328]: 示例
+              - generic [ref=e329]: API
+              - generic [ref=e330]: 指南
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - navigation [ref=e333]:
+                  - list [ref=e334]:
+                    - listitem [ref=e335]:
+                      - link "基础输入框" [ref=e336] [cursor=pointer]:
+                        - /url: "#基础输入框"
+                    - listitem [ref=e337]:
+                      - link "前后置标签输入框" [ref=e338] [cursor=pointer]:
+                        - /url: "#前后置标签输入框"
+                    - listitem [ref=e339]:
+                      - link "组合输入框" [ref=e340] [cursor=pointer]:
+                        - /url: "#组合输入框"
+                    - listitem [ref=e341]:
+                      - link "可清空内容输入框" [ref=e342] [cursor=pointer]:
+                        - /url: "#可清空内容输入框"
+                    - listitem [ref=e343]:
+                      - link "密码输入框" [ref=e344] [cursor=pointer]:
+                        - /url: "#密码输入框"
+                    - listitem [ref=e345]:
+                      - link "不同状态的输入框" [ref=e346] [cursor=pointer]:
+                        - /url: "#不同状态的输入框"
+                    - listitem [ref=e347]:
+                      - link "不同尺寸的输入框" [ref=e348] [cursor=pointer]:
+                        - /url: "#不同尺寸的输入框"
+                    - listitem [ref=e349]:
+                      - link "不同对齐方式的输入框" [ref=e350] [cursor=pointer]:
+                        - /url: "#不同对齐方式的输入框"
+                    - listitem [ref=e351]:
+                      - link "自适应宽度的输入框" [ref=e352] [cursor=pointer]:
+                        - /url: "#自适应宽度的输入框"
+                    - listitem [ref=e353]:
+                      - link "带长度限制的输入框" [ref=e354] [cursor=pointer]:
+                        - /url: "#带长度限制的输入框"
+                    - listitem [ref=e355]:
+                      - link "可格式化数据的输入框" [ref=e356] [cursor=pointer]:
+                        - /url: "#可格式化数据的输入框"
+                    - listitem [ref=e357]:
+                      - link "无边框模式的输入框" [ref=e358] [cursor=pointer]:
+                        - /url: "#无边框模式的输入框"
+                - generic [ref=e360]:
+                  - generic [ref=e361]:
+                    - generic [ref=e362]:
+                      - generic [ref=e365] [cursor=pointer]: input
+                      - textbox "请输入" [ref=e370]
+                      - generic [ref=e371]:
+                        - img [ref=e377] [cursor=pointer]
+                        - img [ref=e381] [cursor=pointer]
+                    - generic [ref=e385]:
+                      - generic [ref=e386]:
+                        - img [ref=e388]
+                        - generic [ref=e391]: 配置
+                      - generic [ref=e392]:
+                        - list [ref=e393]:
+                          - listitem [ref=e394]:
+                            - generic "autofocus" [ref=e395]
+                            - button [ref=e397] [cursor=pointer]
+                          - listitem [ref=e399]:
+                            - generic "autoWidth" [ref=e400]
+                            - button [ref=e402] [cursor=pointer]
+                          - listitem [ref=e404]:
+                            - generic "borderless" [ref=e405]
+                            - button [ref=e407] [cursor=pointer]
+                          - listitem [ref=e409]:
+                            - generic "clearable" [ref=e410]
+                            - button [ref=e412] [cursor=pointer]
+                          - listitem [ref=e414]:
+                            - generic "disabled" [ref=e415]
+                            - button [ref=e417] [cursor=pointer]
+                          - listitem [ref=e419]:
+                            - generic "readonly" [ref=e420]
+                            - button [ref=e422] [cursor=pointer]
+                          - listitem [ref=e424]:
+                            - generic "showClearIconOnEmpty" [ref=e425]
+                            - button [ref=e427] [cursor=pointer]
+                        - list [ref=e430]:
+                          - listitem [ref=e431]:
+                            - generic "align" [ref=e432]
+                            - generic [ref=e436]:
+                              - textbox [ref=e437] [cursor=pointer]: left
+                              - img [ref=e439]
+                          - listitem [ref=e441]:
+                            - generic "size" [ref=e442]
+                            - generic [ref=e446]:
+                              - textbox [ref=e447] [cursor=pointer]: medium
+                              - img [ref=e449]
+                          - listitem [ref=e451]:
+                            - generic "status" [ref=e452]
+                            - generic [ref=e456]:
+                              - textbox [ref=e457] [cursor=pointer]: default
+                              - img [ref=e459]
+                          - listitem [ref=e461]:
+                            - generic "type" [ref=e462]
+                            - generic [ref=e466]:
+                              - textbox [ref=e467] [cursor=pointer]: text
+                              - img [ref=e469]
+                  - code [ref=e472]:
+                    - generic [ref=e473]:
+                      - generic [ref=e474]: <template
+                      - text: ">"
+                    - generic [ref=e475]:
+                      - generic [ref=e476]: <t-input
+                      - text: />
+                    - generic [ref=e477]:
+                      - generic [ref=e478]: </template
+                      - text: ">"
+                - heading "基础输入框" [level=3] [ref=e479]:
+                  - text: 基础输入框
+                  - link [ref=e480] [cursor=pointer]:
+                    - /url: "#基础输入框"
+                - paragraph [ref=e481]: 最基础的单行输入框，按状态可分为正常、禁用、错误、带额外提示。通常在需要输入少量内容（20 个字以内）的场景下使用。
+                - generic [ref=e484]:
+                  - generic [ref=e486]:
+                    - textbox "请输入" [ref=e490]
+                    - textbox "请输入内容（有默认值）" [ref=e494]: 有默认值
+                    - generic [ref=e497]:
+                      - generic [ref=e498]: 价格：
+                      - spinbutton [ref=e499]
+                      - generic [ref=e500]: 元
+                    - generic [ref=e503]:
+                      - textbox "Search Input" [ref=e504]
+                      - img [ref=e506] [cursor=pointer]
+                  - generic [ref=e511]:
+                    - generic [ref=e512]:
+                      - generic [ref=e513]:
+                        - img [ref=e516] [cursor=pointer]
+                        - img [ref=e520] [cursor=pointer]
+                      - img [ref=e529] [cursor=pointer]
+                      - img [ref=e533] [cursor=pointer]
+                    - generic:
+                      - generic [ref=e537] [cursor=pointer]:
+                        - generic [ref=e539]: JavaScript
+                        - generic [ref=e540]: TypeScript
+                      - code [ref=e542]:
+                        - generic [ref=e543]:
+                          - generic [ref=e544]: <template
+                          - text: ">"
+                        - generic [ref=e545]:
+                          - generic [ref=e546]: <t-space
+                          - text: direction
+                          - generic [ref=e547]: ="vertical"
+                          - text: ">"
+                        - generic [ref=e548]:
+                          - generic [ref=e549]: <t-input
+                          - text: />
+                        - generic [ref=e550]:
+                          - generic [ref=e551]: <t-input
+                          - text: v-model
+                          - generic [ref=e552]: ="input"
+                          - text: placeholder
+                          - generic [ref=e553]: ="请输入内容（有默认值）"
+                          - text: "@enter"
+                          - generic [ref=e554]: ="onEnter"
+                          - text: "@change"
+                          - generic [ref=e555]: ="onChange"
+                          - text: />
+                        - text: <!-- label/suffix/suffixIcon 支持同名插槽 -->
+                        - generic [ref=e556]:
+                          - generic [ref=e557]: <t-input
+                          - text: label
+                          - generic [ref=e558]: ="价格："
+                          - text: suffix
+                          - generic [ref=e559]: ="元"
+                          - text: type
+                          - generic [ref=e560]: ="number"
+                          - text: "@change"
+                          - generic [ref=e561]: ="onNumberChange"
+                          - text: "@focus"
+                          - generic [ref=e562]: ="onFocus"
+                          - text: "@blur"
+                          - generic [ref=e563]: ="onBlur"
+                          - text: />
+                        - generic [ref=e564]:
+                          - generic [ref=e565]: <t-input
+                          - text: placeholder
+                          - generic [ref=e566]: ="Search Input"
+                          - text: clearable>
+                        - generic [ref=e567]:
+                          - generic [ref=e568]: <template
+                          - text: "#suffixIcon>"
+                        - generic [ref=e569]:
+                          - generic [ref=e570]: <search-icon
+                          - text: :style
+                          - generic [ref=e571]: "=\"{ cursor: 'pointer' }\""
+                          - text: />
+                        - generic [ref=e572]:
+                          - generic [ref=e573]: </template
+                          - text: ">"
+                        - generic [ref=e574]:
+                          - generic [ref=e575]: </t-input
+                          - text: ">"
+                        - generic [ref=e576]:
+                          - generic [ref=e577]: </t-space
+                          - text: ">"
+                        - generic [ref=e578]:
+                          - generic [ref=e579]: </template
+                          - text: ">"
+                        - generic [ref=e580]:
+                          - generic [ref=e581]: <script
+                          - text: setup>
+                        - generic [ref=e583]:
+                          - text: "import { ref } from 'vue'; import { SearchIcon } from 'tdesign-icons-vue-next'; const input = ref('有默认值'); const onEnter = () => { console.log('trigger enter'); }; const onChange = (val) => { console.log(val); }; const onFocus = ("
+                          - generic [ref=e584]: val, ctx
+                          - text: ") => { console.log('focus:', val, ctx); }; const onBlur = ("
+                          - generic [ref=e585]: val, ctx
+                          - text: ") => { console.log('blur:', val, ctx); }; const onNumberChange = ("
+                          - generic [ref=e586]: val, ctx
+                          - text: ") => { console.log(val, ctx); };"
+                        - generic [ref=e587]:
+                          - generic [ref=e588]: </script
+                          - text: ">"
+                - heading "前后置标签输入框" [level=3] [ref=e589]:
+                  - text: 前后置标签输入框
+                  - link [ref=e590] [cursor=pointer]:
+                    - /url: "#前后置标签输入框"
+                - paragraph [ref=e591]: 在输入框前后加入一些特定的纯展示标签，通常在需要提高辨识效率时使用。
+                - generic [ref=e594]:
+                  - generic [ref=e596]:
+                    - generic [ref=e598]:
+                      - generic [ref=e600]: http://
+                      - textbox "请输入内容" [ref=e603]
+                    - generic [ref=e605]:
+                      - textbox "请输入内容" [ref=e608]
+                      - generic [ref=e610]: .com
+                    - generic [ref=e612]:
+                      - generic [ref=e614]: http://
+                      - textbox "请输入内容" [ref=e617]
+                      - generic [ref=e619]: .com
+                  - generic [ref=e620]:
+                    - generic [ref=e621]:
+                      - generic [ref=e622]:
+                        - img [ref=e625] [cursor=pointer]
+                        - img [ref=e629] [cursor=pointer]
+                      - img [ref=e638] [cursor=pointer]
+                      - img [ref=e642] [cursor=pointer]
+                    - code [ref=e647]:
+                      - generic [ref=e648]:
+                        - generic [ref=e649]: <template
+                        - text: ">"
+                      - generic [ref=e650]:
+                        - generic [ref=e651]: <t-space
+                        - text: direction
+                        - generic [ref=e652]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e653]:
+                        - generic [ref=e654]: <t-input-adornment
+                        - text: prepend
+                        - generic [ref=e655]: ="http://"
+                        - text: ">"
+                      - generic [ref=e656]:
+                        - generic [ref=e657]: <t-input
+                        - text: placeholder
+                        - generic [ref=e658]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e659]:
+                        - generic [ref=e660]: </t-input-adornment
+                        - text: ">"
+                      - generic [ref=e661]:
+                        - generic [ref=e662]: <t-input-adornment
+                        - text: append
+                        - generic [ref=e663]: =".com"
+                        - text: ">"
+                      - generic [ref=e664]:
+                        - generic [ref=e665]: <t-input
+                        - text: placeholder
+                        - generic [ref=e666]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e667]:
+                        - generic [ref=e668]: </t-input-adornment
+                        - text: ">"
+                      - generic [ref=e669]:
+                        - generic [ref=e670]: <t-input-adornment
+                        - text: prepend
+                        - generic [ref=e671]: ="http://"
+                        - text: append
+                        - generic [ref=e672]: =".com"
+                        - text: ">"
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: <t-input
+                        - text: placeholder
+                        - generic [ref=e675]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: </t-input-adornment
+                        - text: ">"
+                      - generic [ref=e678]:
+                        - generic [ref=e679]: </t-space
+                        - text: ">"
+                      - generic [ref=e680]:
+                        - generic [ref=e681]: </template
+                        - text: ">"
+                - heading "组合输入框" [level=3] [ref=e682]:
+                  - text: 组合输入框
+                  - link [ref=e683] [cursor=pointer]:
+                    - /url: "#组合输入框"
+                - paragraph [ref=e684]: 多个输入框相组合，或与其他控件（如下拉）相组合，以方便识别。用于一些固定组合或者固定格式输入的场景，如输入电话号码。
+                - generic [ref=e687]:
+                  - generic [ref=e689]:
+                    - generic [ref=e692]:
+                      - textbox "请输入" [ref=e695]: "0731"
+                      - textbox "请输入" [ref=e698]: "12345677"
+                    - generic [ref=e701]:
+                      - textbox "请输入" [ref=e704]
+                      - textbox "请输入" [ref=e707]
+                    - generic [ref=e710]:
+                      - textbox "请输入" [ref=e713]
+                      - textbox "请输入" [ref=e716]
+                    - generic [ref=e719]:
+                      - textbox "请输入" [ref=e722]: "0731"
+                      - generic [ref=e723]: "-"
+                      - textbox "请输入" [ref=e726]: "12345"
+                      - textbox "请输入" [ref=e729]: "678901"
+                      - textbox "请输入" [ref=e732]
+                  - generic [ref=e733]:
+                    - generic [ref=e734]:
+                      - generic [ref=e735]:
+                        - img [ref=e738] [cursor=pointer]
+                        - img [ref=e742] [cursor=pointer]
+                      - img [ref=e751] [cursor=pointer]
+                      - img [ref=e755] [cursor=pointer]
+                    - code [ref=e760]:
+                      - generic [ref=e761]:
+                        - generic [ref=e762]: <template
+                        - text: ">"
+                      - generic [ref=e763]:
+                        - generic [ref=e764]: <t-space
+                        - text: direction
+                        - generic [ref=e765]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e766]:
+                        - generic [ref=e767]: <div
+                        - text: ">"
+                      - generic [ref=e768]:
+                        - generic [ref=e769]: <t-input-group
+                        - text: separate>
+                      - generic [ref=e770]:
+                        - generic [ref=e771]: <t-input
+                        - text: :style
+                        - generic [ref=e772]: "=\"{ width: '100px' }\""
+                        - text: default-value
+                        - generic [ref=e773]: ="0731"
+                        - text: />
+                      - generic [ref=e774]:
+                        - generic [ref=e775]: <t-input
+                        - text: default-value
+                        - generic [ref=e776]: ="12345677"
+                        - text: />
+                      - generic [ref=e777]:
+                        - generic [ref=e778]: </t-input-group
+                        - text: ">"
+                      - generic [ref=e779]:
+                        - generic [ref=e780]: </div
+                        - text: ">"
+                      - generic [ref=e781]:
+                        - generic [ref=e782]: <div
+                        - text: ">"
+                      - generic [ref=e783]:
+                        - generic [ref=e784]: <t-input-group
+                        - text: separate>
+                      - generic [ref=e785]:
+                        - generic [ref=e786]: <t-input
+                        - text: />
+                      - generic [ref=e787]:
+                        - generic [ref=e788]: <t-input
+                        - text: />
+                      - generic [ref=e789]:
+                        - generic [ref=e790]: </t-input-group
+                        - text: ">"
+                      - generic [ref=e791]:
+                        - generic [ref=e792]: </div
+                        - text: ">"
+                      - generic [ref=e793]:
+                        - generic [ref=e794]: <div
+                        - text: ">"
+                      - generic [ref=e795]:
+                        - generic [ref=e796]: <t-input-group
+                        - text: ">"
+                      - generic [ref=e797]:
+                        - generic [ref=e798]: <t-input
+                        - text: />
+                      - generic [ref=e799]:
+                        - generic [ref=e800]: <t-input
+                        - text: />
+                      - generic [ref=e801]:
+                        - generic [ref=e802]: </t-input-group
+                        - text: ">"
+                      - generic [ref=e803]:
+                        - generic [ref=e804]: </div
+                        - text: ">"
+                      - generic [ref=e805]:
+                        - generic [ref=e806]: <div
+                        - text: ">"
+                      - generic [ref=e807]:
+                        - generic [ref=e808]: <t-input-group
+                        - text: separate>
+                      - generic [ref=e809]:
+                        - generic [ref=e810]: <t-input
+                        - text: :style
+                        - generic [ref=e811]: "=\"{ width: '100px' }\""
+                        - text: default-value
+                        - generic [ref=e812]: ="0731"
+                        - text: />
+                      - generic [ref=e813]:
+                        - generic [ref=e814]: <span
+                        - text: :style
+                        - generic [ref=e815]: "=\"{ lineHeight: '32px' }\""
+                        - text: ">"
+                      - text: "&nbsp;-&nbsp;"
+                      - generic [ref=e816]:
+                        - generic [ref=e817]: </span
+                        - text: ">"
+                      - generic [ref=e818]:
+                        - generic [ref=e819]: <t-input
+                        - text: :style
+                        - generic [ref=e820]: "=\"{ width: '100px' }\""
+                        - text: default-value
+                        - generic [ref=e821]: ="12345"
+                        - text: />
+                      - generic [ref=e822]:
+                        - generic [ref=e823]: <t-input
+                        - text: :style
+                        - generic [ref=e824]: "=\"{ width: '100px' }\""
+                        - text: default-value
+                        - generic [ref=e825]: ="678901"
+                        - text: />
+                      - generic [ref=e826]:
+                        - generic [ref=e827]: <t-input
+                        - text: :style
+                        - generic [ref=e828]: "=\"{ width: '100px' }\""
+                        - text: />
+                      - generic [ref=e829]:
+                        - generic [ref=e830]: </t-input-group
+                        - text: ">"
+                      - generic [ref=e831]:
+                        - generic [ref=e832]: </div
+                        - text: ">"
+                      - generic [ref=e833]:
+                        - generic [ref=e834]: </t-space
+                        - text: ">"
+                      - generic [ref=e835]:
+                        - generic [ref=e836]: </template
+                        - text: ">"
+                - heading "可清空内容输入框" [level=3] [ref=e837]:
+                  - text: 可清空内容输入框
+                  - link [ref=e838] [cursor=pointer]:
+                    - /url: "#可清空内容输入框"
+                - paragraph [ref=e839]: 带清空操作的输入框，可快捷清空输入过的内容。
+                - generic [ref=e842]:
+                  - textbox "请输入" [ref=e846]: Hello TDesign
+                  - generic [ref=e847]:
+                    - generic [ref=e848]:
+                      - generic [ref=e849]:
+                        - img [ref=e852] [cursor=pointer]
+                        - img [ref=e856] [cursor=pointer]
+                      - img [ref=e865] [cursor=pointer]
+                      - img [ref=e869] [cursor=pointer]
+                    - generic:
+                      - generic [ref=e873] [cursor=pointer]:
+                        - generic [ref=e875]: JavaScript
+                        - generic [ref=e876]: TypeScript
+                      - code [ref=e878]:
+                        - generic [ref=e879]:
+                          - generic [ref=e880]: <template
+                          - text: ">"
+                        - generic [ref=e881]:
+                          - generic [ref=e882]: <t-input
+                          - text: v-model
+                          - generic [ref=e883]: ="value"
+                          - text: clearable placeholder
+                          - generic [ref=e884]: ="请输入"
+                          - text: "@clear"
+                          - generic [ref=e885]: ="onClear"
+                          - text: "@blur"
+                          - generic [ref=e886]: ="onBlur"
+                          - text: />
+                        - generic [ref=e887]:
+                          - generic [ref=e888]: </template
+                          - text: ">"
+                        - generic [ref=e889]:
+                          - generic [ref=e890]: <script
+                          - text: setup>
+                        - generic [ref=e892]: "import { ref } from 'vue'; const value = ref('Hello TDesign'); const onClear = () => { console.log('clear'); }; const onBlur = () => { console.log('blur'); };"
+                        - generic [ref=e893]:
+                          - generic [ref=e894]: </script
+                          - text: ">"
+                - heading "密码输入框" [level=3] [ref=e895]:
+                  - text: 密码输入框
+                  - link [ref=e896] [cursor=pointer]:
+                    - /url: "#密码输入框"
+                - paragraph [ref=e897]: 由符号代替输入内容的输入框，并可通过操作展示原文信息。用于强安全信息输入的场景。
+                - generic [ref=e900]:
+                  - generic [ref=e902]:
+                    - generic [ref=e905]:
+                      - img [ref=e907]
+                      - textbox "请输入" [ref=e913]: 520 TDesign
+                      - img [ref=e915] [cursor=pointer]
+                    - generic [ref=e921]:
+                      - img [ref=e923]
+                      - textbox "请输入" [ref=e929]: 520 TDesign
+                      - img [ref=e931] [cursor=pointer]
+                  - generic [ref=e935]:
+                    - generic [ref=e936]:
+                      - generic [ref=e937]:
+                        - img [ref=e940] [cursor=pointer]
+                        - img [ref=e944] [cursor=pointer]
+                      - img [ref=e953] [cursor=pointer]
+                      - img [ref=e957] [cursor=pointer]
+                    - generic:
+                      - generic [ref=e961] [cursor=pointer]:
+                        - generic [ref=e963]: JavaScript
+                        - generic [ref=e964]: TypeScript
+                      - code [ref=e966]:
+                        - generic [ref=e967]:
+                          - generic [ref=e968]: <template
+                          - text: ">"
+                        - generic [ref=e969]:
+                          - generic [ref=e970]: <t-space
+                          - text: direction
+                          - generic [ref=e971]: ="vertical"
+                          - text: ">"
+                        - generic [ref=e972]:
+                          - generic [ref=e973]: <t-input
+                          - text: type
+                          - generic [ref=e974]: ="password"
+                          - text: default-value
+                          - generic [ref=e975]: ="520 TDesign"
+                          - text: ">"
+                        - generic [ref=e976]:
+                          - generic [ref=e977]: <template
+                          - text: "#prefix-icon>"
+                        - generic [ref=e978]:
+                          - generic [ref=e979]: <lock-on-icon
+                          - text: />
+                        - generic [ref=e980]:
+                          - generic [ref=e981]: </template
+                          - text: ">"
+                        - generic [ref=e982]:
+                          - generic [ref=e983]: </t-input
+                          - text: ">"
+                        - text: <!-- 使用 function 的形式定义 icon -->
+                        - generic [ref=e984]:
+                          - generic [ref=e985]: <t-input
+                          - text: type
+                          - generic [ref=e986]: ="password"
+                          - text: default-value
+                          - generic [ref=e987]: ="520 TDesign"
+                          - text: :prefix-icon
+                          - generic [ref=e988]: ="renderPrefixIcon"
+                          - text: />
+                        - generic [ref=e989]:
+                          - generic [ref=e990]: </t-space
+                          - text: ">"
+                        - generic [ref=e991]:
+                          - generic [ref=e992]: </template
+                          - text: ">"
+                        - generic [ref=e993]:
+                          - generic [ref=e994]: <script
+                          - text: setup lang
+                          - generic [ref=e995]: ="jsx"
+                          - text: ">"
+                        - generic [ref=e997]: "import { LockOnIcon } from 'tdesign-icons-vue-next'; const renderPrefixIcon = () => <LockOnIcon />;"
+                        - generic [ref=e998]:
+                          - generic [ref=e999]: </script
+                          - text: ">"
+                - heading "不同状态的输入框" [level=3] [ref=e1000]:
+                  - text: 不同状态的输入框
+                  - link [ref=e1001] [cursor=pointer]:
+                    - /url: "#不同状态的输入框"
+                - paragraph [ref=e1002]: 输入框状态可分为：正常、禁用、异常（带提示）、带额外内容提示、带状态图标提示。
+                - generic [ref=e1005]:
+                  - generic [ref=e1007]:
+                    - generic [ref=e1009]:
+                      - textbox "请输入" [disabled] [ref=e1013]: 禁用状态
+                      - textbox "请输入" [ref=e1017] [cursor=pointer]: 只读状态
+                    - generic [ref=e1019]:
+                      - textbox "请输入" [ref=e1023]: 成功状态
+                      - textbox "请输入" [ref=e1027]: 成功状态
+                      - textbox "请输入" [ref=e1031]: 警告状态
+                      - textbox "请输入" [ref=e1035]: 错误状态
+                    - generic [ref=e1037]:
+                      - generic [ref=e1039]:
+                        - textbox "请输入" [ref=e1041]: 普通状态
+                        - generic [ref=e1042]: 这是普通文本提示
+                      - generic [ref=e1044]:
+                        - textbox "请输入" [ref=e1046]: 成功状态
+                        - generic [ref=e1047]: 校验通过文本提示
+                      - generic [ref=e1049]:
+                        - textbox "请输入" [ref=e1051]: 警告状态
+                        - generic [ref=e1052]: 校验不通过文本提示
+                      - generic [ref=e1054]:
+                        - textbox "请输入" [ref=e1056]: 错误状态
+                        - generic [ref=e1057]: 校验存在严重问题文本提示
+                  - generic [ref=e1058]:
+                    - generic [ref=e1059]:
+                      - generic [ref=e1060]:
+                        - img [ref=e1063] [cursor=pointer]
+                        - img [ref=e1067] [cursor=pointer]
+                      - img [ref=e1076] [cursor=pointer]
+                      - img [ref=e1080] [cursor=pointer]
+                    - code [ref=e1085]:
+                      - generic [ref=e1086]:
+                        - generic [ref=e1087]: <template
+                        - text: ">"
+                      - generic [ref=e1088]:
+                        - generic [ref=e1089]: <t-space
+                        - text: class
+                        - generic [ref=e1090]: ="t-demo__input-status"
+                        - text: :size
+                        - generic [ref=e1091]: ="80"
+                        - generic [ref=e1092]:
+                          - text: style
+                          - generic [ref=e1093]:
+                            - text: ="
+                            - generic [ref=e1094]: "max-width: 500px"
+                            - text: "\""
+                        - text: ">"
+                      - generic [ref=e1095]:
+                        - generic [ref=e1096]: <t-space
+                        - text: direction
+                        - generic [ref=e1097]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e1098]:
+                        - generic [ref=e1099]: <t-input
+                        - text: disabled default-value
+                        - generic [ref=e1100]: ="禁用状态"
+                        - text: />
+                      - generic [ref=e1101]:
+                        - generic [ref=e1102]: <t-input
+                        - text: readonly default-value
+                        - generic [ref=e1103]: ="只读状态"
+                        - text: />
+                      - generic [ref=e1104]:
+                        - generic [ref=e1105]: </t-space
+                        - text: ">"
+                      - generic [ref=e1106]:
+                        - generic [ref=e1107]: <t-space
+                        - text: direction
+                        - generic [ref=e1108]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e1109]:
+                        - generic [ref=e1110]: <t-input
+                        - text: default-value
+                        - generic [ref=e1111]: ="成功状态"
+                        - text: />
+                      - generic [ref=e1112]:
+                        - generic [ref=e1113]: <t-input
+                        - text: status
+                        - generic [ref=e1114]: ="success"
+                        - text: default-value
+                        - generic [ref=e1115]: ="成功状态"
+                        - text: />
+                      - generic [ref=e1116]:
+                        - generic [ref=e1117]: <t-input
+                        - text: status
+                        - generic [ref=e1118]: ="warning"
+                        - text: default-value
+                        - generic [ref=e1119]: ="警告状态"
+                        - text: />
+                      - generic [ref=e1120]:
+                        - generic [ref=e1121]: <t-input
+                        - text: status
+                        - generic [ref=e1122]: ="error"
+                        - text: default-value
+                        - generic [ref=e1123]: ="错误状态"
+                        - text: />
+                      - generic [ref=e1124]:
+                        - generic [ref=e1125]: </t-space
+                        - text: ">"
+                      - generic [ref=e1126]:
+                        - generic [ref=e1127]: <t-space
+                        - text: direction
+                        - generic [ref=e1128]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e1129]:
+                        - generic [ref=e1130]: <t-input
+                        - text: default-value
+                        - generic [ref=e1131]: ="普通状态"
+                        - text: tips
+                        - generic [ref=e1132]: ="这是普通文本提示"
+                        - text: />
+                      - generic [ref=e1133]:
+                        - generic [ref=e1134]: <t-input
+                        - text: status
+                        - generic [ref=e1135]: ="success"
+                        - text: default-value
+                        - generic [ref=e1136]: ="成功状态"
+                        - text: tips
+                        - generic [ref=e1137]: ="校验通过文本提示"
+                        - text: />
+                      - generic [ref=e1138]:
+                        - generic [ref=e1139]: <t-input
+                        - text: status
+                        - generic [ref=e1140]: ="warning"
+                        - text: default-value
+                        - generic [ref=e1141]: ="警告状态"
+                        - text: tips
+                        - generic [ref=e1142]: ="校验不通过文本提示"
+                        - text: />
+                      - generic [ref=e1143]:
+                        - generic [ref=e1144]: <t-input
+                        - text: status
+                        - generic [ref=e1145]: ="error"
+                        - text: default-value
+                        - generic [ref=e1146]: ="错误状态"
+                        - text: tips
+                        - generic [ref=e1147]: ="校验存在严重问题文本提示"
+                        - text: />
+                      - generic [ref=e1148]:
+                        - generic [ref=e1149]: </t-space
+                        - text: ">"
+                      - generic [ref=e1150]:
+                        - generic [ref=e1151]: </t-space
+                        - text: ">"
+                      - generic [ref=e1152]:
+                        - generic [ref=e1153]: </template
+                        - text: ">"
+                      - generic [ref=e1154]:
+                        - generic [ref=e1155]: <style
+                        - text: ">"
+                      - generic [ref=e1157]: ".t-demo__input-status .t-space-item { margin-bottom: 12px; }"
+                      - generic [ref=e1158]:
+                        - generic [ref=e1159]: </style
+                        - text: ">"
+                - heading "不同尺寸的输入框" [level=3] [ref=e1160]:
+                  - text: 不同尺寸的输入框
+                  - link [ref=e1161] [cursor=pointer]:
+                    - /url: "#不同尺寸的输入框"
+                - paragraph [ref=e1162]:
+                  - text: 有大中小三种不同高度、宽度的输入框，以适应不同尺寸布局。设置
+                  - code [ref=e1163]: size = large | medium | small
+                  - text: 实现不同的尺寸。
+                - generic [ref=e1166]:
+                  - generic [ref=e1168]:
+                    - textbox "请输入内容" [ref=e1172]
+                    - textbox "请输入内容" [ref=e1176]
+                    - textbox "请输入内容" [ref=e1180]
+                  - generic [ref=e1181]:
+                    - generic [ref=e1182]:
+                      - generic [ref=e1183]:
+                        - img [ref=e1186] [cursor=pointer]
+                        - img [ref=e1190] [cursor=pointer]
+                      - img [ref=e1199] [cursor=pointer]
+                      - img [ref=e1203] [cursor=pointer]
+                    - code [ref=e1208]:
+                      - generic [ref=e1209]:
+                        - generic [ref=e1210]: <template
+                        - text: ">"
+                      - generic [ref=e1211]:
+                        - generic [ref=e1212]: <t-space
+                        - text: direction
+                        - generic [ref=e1213]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e1214]:
+                        - generic [ref=e1215]: <t-input
+                        - text: size
+                        - generic [ref=e1216]: ="large"
+                        - text: placeholder
+                        - generic [ref=e1217]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e1218]:
+                        - generic [ref=e1219]: <t-input
+                        - text: placeholder
+                        - generic [ref=e1220]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e1221]:
+                        - generic [ref=e1222]: <t-input
+                        - text: size
+                        - generic [ref=e1223]: ="small"
+                        - text: placeholder
+                        - generic [ref=e1224]: ="请输入内容"
+                        - text: />
+                      - generic [ref=e1225]:
+                        - generic [ref=e1226]: </t-space
+                        - text: ">"
+                      - generic [ref=e1227]:
+                        - generic [ref=e1228]: </template
+                        - text: ">"
+                - heading "不同对齐方式的输入框" [level=3] [ref=e1229]:
+                  - text: 不同对齐方式的输入框
+                  - link [ref=e1230] [cursor=pointer]:
+                    - /url: "#不同对齐方式的输入框"
+                - paragraph [ref=e1231]:
+                  - text: 输入框共有三种对齐方式：左对齐、局中对齐和右对齐。设置
+                  - code [ref=e1232]: align = left | center | right
+                  - text: 实现不同的对齐方式。
+                - generic [ref=e1235]:
+                  - generic [ref=e1237]:
+                    - textbox "请输入" [ref=e1241]: 左对齐
+                    - textbox "请输入" [ref=e1245]: 居中对齐
+                    - textbox "请输入" [ref=e1249]: 右对齐
+                  - generic [ref=e1250]:
+                    - generic [ref=e1251]:
+                      - generic [ref=e1252]:
+                        - img [ref=e1255] [cursor=pointer]
+                        - img [ref=e1259] [cursor=pointer]
+                      - img [ref=e1268] [cursor=pointer]
+                      - img [ref=e1272] [cursor=pointer]
+                    - code [ref=e1277]:
+                      - generic [ref=e1278]:
+                        - generic [ref=e1279]: <template
+                        - text: ">"
+                      - generic [ref=e1280]:
+                        - generic [ref=e1281]: <t-space
+                        - text: direction
+                        - generic [ref=e1282]: ="vertical"
+                        - text: ">"
+                      - generic [ref=e1283]:
+                        - generic [ref=e1284]: <t-input
+                        - text: default-value
+                        - generic [ref=e1285]: ="左对齐"
+                        - text: align
+                        - generic [ref=e1286]: ="left"
+                        - text: />
+                      - generic [ref=e1287]:
+                        - generic [ref=e1288]: <t-input
+                        - text: default-value
+                        - generic [ref=e1289]: ="居中对齐"
+                        - text: align
+                        - generic [ref=e1290]: ="center"
+                        - text: />
+                      - generic [ref=e1291]:
+                        - generic [ref=e1292]: <t-input
+                        - text: default-value
+                        - generic [ref=e1293]: ="右对齐"
+                        - text: align
+                        - generic [ref=e1294]: ="right"
+                        - text: />
+                      - generic [ref=e1295]:
+                        - generic [ref=e1296]: </t-space
+                        - text: ">"
+                      - generic [ref=e1297]:
+                        - generic [ref=e1298]: </template
+                        - text: ">"
+                - heading "自适应宽度的输入框" [level=3] [ref=e1299]:
+                  - text: 自适应宽度的输入框
+                  - link [ref=e1300] [cursor=pointer]:
+                    - /url: "#自适应宽度的输入框"
+                - paragraph [ref=e1301]:
+                  - text: 输入框支持宽度随输入内容变化而变化，设置属性
+                  - code [ref=e1302]: autoWidth
+                  - text: 即可。
+                - generic [ref=e1305]:
+                  - textbox "请输入" [ref=e1309]: 宽度自适应
+                  - generic [ref=e1310]:
+                    - generic [ref=e1311]:
+                      - generic [ref=e1312]:
+                        - img [ref=e1315] [cursor=pointer]
+                        - img [ref=e1319] [cursor=pointer]
+                      - img [ref=e1328] [cursor=pointer]
+                      - img [ref=e1332] [cursor=pointer]
+                    - code [ref=e1337]:
+                      - generic [ref=e1338]:
+                        - generic [ref=e1339]: <template
+                        - text: ">"
+                      - generic [ref=e1340]:
+                        - generic [ref=e1341]: <t-input
+                        - text: auto-width default-value
+                        - generic [ref=e1342]: ="宽度自适应"
+                        - text: />
+                      - generic [ref=e1343]:
+                        - generic [ref=e1344]: </template
+                        - text: ">"
+                - heading "带长度限制的输入框" [level=3] [ref=e1345]:
+                  - text: 带长度限制的输入框
+                  - link [ref=e1346] [cursor=pointer]:
+                    - /url: "#带长度限制的输入框"
+                - list [ref=e1347]:
+                  - listitem [ref=e1348]:
+                    - text: 使用
+                    - code [ref=e1349]: maxlength
+                    - text: 设置输入框的长度限度，一个中文等于一个计数长度。
+                  - listitem [ref=e1350]:
+                    - text: 使用
+                    - code [ref=e1351]: maxcharacter
+                    - text: 设置输入框的长度限度，一个中文汉字表示两个字符长度。
+                  - listitem [ref=e1352]:
+                    - text: 使用
+                    - code [ref=e1353]: allowInputOverMax
+                    - text: 设置是否允许在输入内容已经超出限制时继续输入。
+                  - listitem [ref=e1354]:
+                    - text: 使用
+                    - code [ref=e1355]: showLimitNumber
+                    - text: 设置是否显示输入框右侧的字数统计。
+                - generic [ref=e1358]:
+                  - generic [ref=e1360]:
+                    - generic [ref=e1363]:
+                      - textbox "内置字数限制，最大文本长度，一个中文字等于一个长度" [ref=e1364]
+                      - generic [ref=e1366]: 0/5
+                    - generic [ref=e1369]:
+                      - textbox "内置字数限制，最大字符数量限制，一个中文字等于两个字符" [ref=e1370]
+                      - generic [ref=e1372]: 0/10
+                    - generic [ref=e1375]:
+                      - textbox "内置字数限制，字数超出时允许继续输入" [ref=e1376]
+                      - generic [ref=e1378]: 0/5
+                    - generic [ref=e1381]:
+                      - textbox "自定义字数限制文本" [ref=e1382]
+                      - generic [ref=e1383]: 0/5
+                  - generic [ref=e1384]:
+                    - generic [ref=e1385]:
+                      - generic [ref=e1386]:
+                        - img [ref=e1389] [cursor=pointer]
+                        - img [ref=e1393] [cursor=pointer]
+                      - img [ref=e1402] [cursor=pointer]
+                      - img [ref=e1406] [cursor=pointer]
+                    - generic:
+                      - generic [ref=e1410] [cursor=pointer]:
+                        - generic [ref=e1412]: JavaScript
+                        - generic [ref=e1413]: TypeScript
+                      - code [ref=e1415]:
+                        - generic [ref=e1416]:
+                          - generic [ref=e1417]: <template
+                          - text: ">"
+                        - generic [ref=e1418]:
+                          - generic [ref=e1419]: <t-space
+                          - text: direction
+                          - generic [ref=e1420]: ="vertical"
+                          - text: class
+                          - generic [ref=e1421]: ="t-demo__input-status"
+                          - generic [ref=e1422]:
+                            - text: style
+                            - generic [ref=e1423]:
+                              - text: ="
+                              - generic [ref=e1424]: "max-width: 500px"
+                              - text: "\""
+                          - text: ">"
+                        - text: <!-- 内置 -->
+                        - generic [ref=e1425]:
+                          - generic [ref=e1426]: <t-input
+                          - text: v-model
+                          - generic [ref=e1427]: ="input1"
+                          - text: :maxlength
+                          - generic [ref=e1428]: ="5"
+                          - text: show-limit-number clearable placeholder
+                          - generic [ref=e1429]: ="内置字数限制，最大文本长度，一个中文字等于一个长度"
+                          - text: "@compositionend"
+                          - generic [ref=e1430]: ="onCompositionend"
+                          - text: />
+                        - generic [ref=e1431]:
+                          - generic [ref=e1432]: <t-input
+                          - text: v-model
+                          - generic [ref=e1433]: ="input2"
+                          - text: :maxcharacter
+                          - generic [ref=e1434]: ="10"
+                          - text: show-limit-number placeholder
+                          - generic [ref=e1435]: ="内置字数限制，最大字符数量限制，一个中文字等于两个字符"
+                          - text: />
+                        - generic [ref=e1436]:
+                          - generic [ref=e1437]: <t-input
+                          - text: v-model
+                          - generic [ref=e1438]: ="input3"
+                          - text: :maxlength
+                          - generic [ref=e1439]: ="5"
+                          - text: show-limit-number allow-input-over-max placeholder
+                          - generic [ref=e1440]: ="内置字数限制，字数超出时允许继续输入"
+                          - text: :tips
+                          - generic [ref=e1441]: ="errorTips"
+                          - text: :status
+                          - generic [ref=e1442]: "=\"errorTips ? 'error' : ''\""
+                          - text: "@validate"
+                          - generic [ref=e1443]: ="onValidate"
+                          - text: />
+                        - text: <!-- 自定义 -->
+                        - generic [ref=e1444]:
+                          - generic [ref=e1445]: <t-input
+                          - text: v-model
+                          - generic [ref=e1446]: ="input4"
+                          - text: :maxlength
+                          - generic [ref=e1447]: ="5"
+                          - text: :suffix
+                          - generic [ref=e1448]: ="suffix"
+                          - text: placeholder
+                          - generic [ref=e1449]: ="自定义字数限制文本"
+                          - text: />
+                        - generic [ref=e1450]:
+                          - generic [ref=e1451]: </t-space
+                          - text: ">"
+                        - generic [ref=e1452]:
+                          - generic [ref=e1453]: </template
+                          - text: ">"
+                        - generic [ref=e1454]:
+                          - generic [ref=e1455]: <script
+                          - text: setup>
+                        - generic [ref=e1457]:
+                          - text: "import { ref, computed } from 'vue'; const input1 = ref(''); const input2 = ref(''); const input3 = ref(''); const input4 = ref(''); const errorTips = ref(''); const suffix = computed(() => { return"
+                          - generic [ref=e1458]:
+                            - text: "`"
+                            - generic [ref=e1459]: "${input4.value.length}"
+                            - text: "/5`"
+                          - text: "; }); const onValidate = ("
+                          - generic [ref=e1460]: "{ error }"
+                          - text: ") => { errorTips.value = error ? '输入内容长度不允许超过 5 个字' : ''; }; const onCompositionend = () => { console.log('onCompositionend'); };"
+                        - generic [ref=e1461]:
+                          - generic [ref=e1462]: </script
+                          - text: ">"
+                - heading "可格式化数据的输入框" [level=3] [ref=e1463]:
+                  - text: 可格式化数据的输入框
+                  - link [ref=e1464] [cursor=pointer]:
+                    - /url: "#可格式化数据的输入框"
+                - paragraph [ref=e1465]:
+                  - text: 可以使用
+                  - code [ref=e1466]: format
+                  - text: 设置输入框在失焦和聚焦时的不同内容呈现。
+                - generic [ref=e1469]:
+                  - generic [ref=e1471]:
+                    - textbox "请输入数字" [ref=e1473]
+                    - generic [ref=e1474]: 请输入数字
+                  - generic [ref=e1475]:
+                    - generic [ref=e1476]:
+                      - generic [ref=e1477]:
+                        - img [ref=e1480] [cursor=pointer]
+                        - img [ref=e1484] [cursor=pointer]
+                      - img [ref=e1493] [cursor=pointer]
+                      - img [ref=e1497] [cursor=pointer]
+                    - generic:
+                      - generic [ref=e1501] [cursor=pointer]:
+                        - generic [ref=e1503]: JavaScript
+                        - generic [ref=e1504]: TypeScript
+                      - code [ref=e1506]:
+                        - generic [ref=e1507]:
+                          - generic [ref=e1508]: <template
+                          - text: ">"
+                        - generic [ref=e1509]:
+                          - generic [ref=e1510]: <t-input
+                          - text: v-model
+                          - generic [ref=e1511]: ="input"
+                          - text: :status
+                          - generic [ref=e1512]: ="inputStatus"
+                          - text: :format
+                          - generic [ref=e1513]: ="format"
+                          - text: placeholder
+                          - generic [ref=e1514]: ="请输入数字"
+                          - text: :tips
+                          - generic [ref=e1515]: ="tips"
+                          - text: />
+                        - generic [ref=e1516]:
+                          - generic [ref=e1517]: </template
+                          - text: ">"
+                        - generic [ref=e1518]:
+                          - generic [ref=e1519]: <script
+                          - text: setup>
+                        - generic [ref=e1521]:
+                          - text: "import { ref, computed } from 'vue'; const input = ref(''); const inputStatus = computed(() => { if (isNaN(+input.value)) { return 'error'; } return 'default'; }); const tips = computed(() => { if (!inputStatus.value) { return ''; } return '请输入数字'; }); const format = (val) => { const reg ="
+                          - generic [ref=e1522]: "/(\\d)(?=(?:\\d{3})+$)/g"
+                          - text: "; const str = val.replace(reg, '$1,'); return str; };"
+                        - generic [ref=e1523]:
+                          - generic [ref=e1524]: </script
+                          - text: ">"
+                - heading "无边框模式的输入框" [level=3] [ref=e1525]:
+                  - text: 无边框模式的输入框
+                  - link [ref=e1526] [cursor=pointer]:
+                    - /url: "#无边框模式的输入框"
+                - paragraph [ref=e1527]:
+                  - text: 可以使用
+                  - code [ref=e1528]: borderless
+                  - text: 来开启无边框模式。
+                - generic [ref=e1531]:
+                  - generic [ref=e1533]:
+                    - textbox "please input" [ref=e1537]
+                    - textbox "borderless Input" [ref=e1541]
+                  - generic [ref=e1542]:
+                    - generic [ref=e1543]:
+                      - generic [ref=e1544]:
+                        - img [ref=e1547] [cursor=pointer]
+                        - img [ref=e1551] [cursor=pointer]
+                      - img [ref=e1560] [cursor=pointer]
+                      - img [ref=e1564] [cursor=pointer]
+                    - code [ref=e1569]:
+                      - generic [ref=e1570]:
+                        - generic [ref=e1571]: <template
+                        - text: ">"
+                      - generic [ref=e1572]:
+                        - generic [ref=e1573]: <t-space
+                        - text: direction
+                        - generic [ref=e1574]: ="vertical"
+                        - generic [ref=e1575]:
+                          - text: style
+                          - generic [ref=e1576]:
+                            - text: ="
+                            - generic [ref=e1577]: "max-width: 500px"
+                            - text: "\""
+                        - text: ">"
+                      - generic [ref=e1578]:
+                        - generic [ref=e1579]: <t-input
+                        - text: placeholder
+                        - generic [ref=e1580]: ="please input"
+                        - text: clearable>
+                      - generic [ref=e1581]:
+                        - generic [ref=e1582]: </t-input
+                        - text: ">"
+                      - generic [ref=e1583]:
+                        - generic [ref=e1584]: <t-input
+                        - text: placeholder
+                        - generic [ref=e1585]: ="borderless Input"
+                        - text: borderless clearable>
+                      - generic [ref=e1586]:
+                        - generic [ref=e1587]: </t-input
+                        - text: ">"
+                      - generic [ref=e1588]:
+                        - generic [ref=e1589]: </t-space
+                        - text: ">"
+                      - generic [ref=e1590]:
+                        - generic [ref=e1591]: </template
+                        - text: ">"
+                      - generic [ref=e1592]:
+                        - generic [ref=e1593]: <script
+                        - text: setup>
+                      - generic [ref=e1594]:
+                        - generic [ref=e1595]: </script
+                        - text: ">"
+              - generic [ref=e1597]:
+                - heading "Contributors" [level=3] [ref=e1598]
+                - generic [ref=e1599]:
+                  - link [ref=e1605] [cursor=pointer]:
+                    - /url: https://github.com/gnauhca
+                    - img [ref=e1606]
+                  - link [ref=e1612] [cursor=pointer]:
+                    - /url: https://github.com/pattybaby110
+                    - img [ref=e1613]
+                  - link [ref=e1619] [cursor=pointer]:
+                    - /url: https://github.com/catenliu
+                    - img [ref=e1620]
+                  - link [ref=e1626] [cursor=pointer]:
+                    - /url: https://github.com/Athenaqin
+                    - img [ref=e1627]
+                  - link [ref=e1633] [cursor=pointer]:
+                    - /url: https://github.com/DOUBLE-DENG
+                    - img [ref=e1634]
+                  - link [ref=e1640] [cursor=pointer]:
+                    - /url: https://github.com/Wen1kang
+                    - img [ref=e1641]
+                  - link [ref=e1647] [cursor=pointer]:
+                    - /url: https://github.com/jrainlau
+                    - img [ref=e1648]
+                  - link [ref=e1654] [cursor=pointer]:
+                    - /url: https://github.com/xiaota
+                    - img [ref=e1655]
+                  - link [ref=e1661] [cursor=pointer]:
+                    - /url: https://github.com/mokywu
+                    - img [ref=e1662]
+                  - link [ref=e1668] [cursor=pointer]:
+                    - /url: https://github.com/chaishi
+                    - img [ref=e1669]
+            - generic [ref=e1672]:
+              - img [ref=e1674]
+              - generic [ref=e1677]: "Last Update:"
+              - text: 1/26/2025, 1:09:02 PM
+        - generic [ref=e1678]:
+          - generic [ref=e1681]:
+            - generic [ref=e1682]:
+              - generic [ref=e1685]:
+                - generic [ref=e1686]:
+                  - generic [ref=e1687] [cursor=pointer]:
+                    - img [ref=e1689]
+                    - generic [ref=e1692]: Vue 2
+                  - generic [ref=e1693] [cursor=pointer]:
+                    - img [ref=e1695]
+                    - generic [ref=e1698]: Vue 3
+                  - generic [ref=e1699] [cursor=pointer]:
+                    - img [ref=e1701]
+                    - generic [ref=e1703]: React
+                - generic [ref=e1704]:
+                  - generic [ref=e1705] [cursor=pointer]:
+                    - img [ref=e1707]
+                    - generic [ref=e1709]: Flutter
+                  - generic [ref=e1710] [cursor=pointer]:
+                    - img [ref=e1712]
+                    - generic [ref=e1723]: Design
+                - generic [ref=e1725] [cursor=pointer]:
+                  - img [ref=e1727]
+                  - generic [ref=e1730]: MiniProgram
+              - heading "企业微信群" [level=4] [ref=e1731]
+              - paragraph [ref=e1732]: 欢迎微信扫码联系我们
+            - generic [ref=e1733]:
+              - paragraph [ref=e1734]: 资源
+              - link "设计资源" [ref=e1735] [cursor=pointer]:
+                - /url: /source
+              - link "TDesign Starter" [ref=e1736] [cursor=pointer]:
+                - /url: https://tdesign.tencent.com/starter/
+            - generic [ref=e1737]:
+              - paragraph [ref=e1738]: 腾讯设计
+              - link "CoDesign" [ref=e1739] [cursor=pointer]:
+                - /url: https://codesign.qq.com/
+              - link "TDesign" [ref=e1740] [cursor=pointer]:
+                - /url: https://tdesign.tencent.com
+            - generic [ref=e1741]:
+              - paragraph [ref=e1742]: 关于
+              - link "关于我们" [ref=e1743] [cursor=pointer]:
+                - /url: /about/introduce
+              - link "联系我们" [ref=e1744] [cursor=pointer]:
+                - /url: /about/contact
+          - generic [ref=e1746]:
+            - paragraph [ref=e1747]: Copyright © 1998 - 2026 Tencent. All Rights Reserved. 腾讯公司 版权所有
+            - generic [ref=e1748]:
+              - img [ref=e1750]
+              - link [ref=e1785] [cursor=pointer]:
+                - /url: https://cloud.tencent.com/
+                - img [ref=e1786]
+      - generic [ref=e1799]:
+        - button "默认主题" [ref=e1801] [cursor=pointer]:
+          - img [ref=e1802]
+          - generic [ref=e1805]: 默认主题
+        - button [ref=e1807] [cursor=pointer]:
+          - img [ref=e1808]
+```

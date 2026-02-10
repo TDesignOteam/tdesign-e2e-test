@@ -1,0 +1,67 @@
+name: TDesign E2E 定时测试
+
+on:
+  # 每 10 分钟执行一次
+  schedule:
+    - cron: '*/10 * * * *'
+  # master 分支 push 时执行
+  push:
+    branches:
+      - master
+  # 支持手动触发
+  workflow_dispatch:
+
+jobs:
+  e2e-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: 安装依赖
+        run: pnpm install
+
+      - name: 安装 Chromium 浏览器
+        run: npx puppeteer browsers install chrome
+
+      - name: 执行 E2E 测试
+        id: e2e_test
+        continue-on-error: true
+        env:
+          CI: true
+        run: |
+          mkdir -p test-results
+          pnpm test -- --json --outputFile=test-results/results.json 2>&1 | tee test-results/output.log
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+
+      - name: 发送企业微信通知（测试失败时）
+        if: steps.e2e_test.outcome == 'failure'
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+          WECOM_CHAT_ID: ${{ secrets.WECOM_CHAT_ID }}
+          GITHUB_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: npx ts-node scripts/notify.ts
+
+      - name: 上传测试结果
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+          retention-days: 7
+
+      - name: 检查测试结果
+        if: steps.e2e_test.outcome == 'failure'
+        run: exit 1

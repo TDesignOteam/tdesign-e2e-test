@@ -1,0 +1,437 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - banner [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e10]:
+          - img [ref=e14] [cursor=pointer]
+          - link "TDesign" [ref=e25] [cursor=pointer]:
+            - /url: /
+            - img [ref=e26]
+        - generic [ref=e39]:
+          - link "设计" [ref=e40] [cursor=pointer]:
+            - /url: /design
+          - generic [ref=e43] [cursor=pointer]:
+            - text: 基础组件
+            - img [ref=e45]
+          - link "页面模板" [ref=e47] [cursor=pointer]:
+            - /url: https://tdesign.tencent.com/starter/
+          - link "资源" [ref=e48] [cursor=pointer]:
+            - /url: /source
+          - link "关于" [ref=e49] [cursor=pointer]:
+            - /url: /about/introduce
+          - img [ref=e52] [cursor=pointer]
+          - link [ref=e54] [cursor=pointer]:
+            - /url: https://github.com/Tencent/tdesign
+            - img [ref=e56]
+          - generic [ref=e59]:
+            - generic [ref=e61] [cursor=pointer]:
+              - img
+            - generic [ref=e62] [cursor=pointer]:
+              - img
+    - generic [ref=e63]:
+      - generic [ref=e67]:
+        - img
+        - img
+        - img
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - heading "TDesign 为设计师 & 开发者，打造工作美学 腾讯 “端服务” 联盟产品" [level=2] [ref=e75]:
+            - paragraph [ref=e76]: TDesign
+            - generic [ref=e77]:
+              - paragraph [ref=e78]: 为设计师 & 开发者，打造工作美学
+              - generic [ref=e80] [cursor=pointer]: 腾讯 “端服务” 联盟产品
+          - generic [ref=e81] [cursor=pointer]:
+            - img [ref=e82]
+            - generic [ref=e83]: 点击关注 TDesign 公众号
+        - generic [ref=e84]:
+          - generic [ref=e86] [cursor=pointer]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: 新图标资源发布
+              - paragraph [ref=e91]: 支持可变粗细和多色填充，欢迎使用体验
+            - generic [ref=e93]: 2025-10
+          - generic [ref=e95] [cursor=pointer]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: MCP工具上线
+              - paragraph [ref=e100]: 辅助 AI 编程场景，支持桌面端组件库场景使用
+            - generic [ref=e102]: 2025-08
+          - generic [ref=e104] [cursor=pointer]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: TDesign AI Chat 新版本发布
+              - paragraph [ref=e109]: 同步开源组件源码和设计资源
+            - generic [ref=e111]: 2025-04
+          - generic [ref=e113] [cursor=pointer]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Figma 设计资源上新
+              - paragraph [ref=e118]: 涉及组件上新及变体优化
+            - generic [ref=e120]: 2025-02
+          - generic [ref=e122] [cursor=pointer]:
+            - generic [ref=e125]:
+              - generic [ref=e126]: TDesign 2024 年度回顾来咯
+              - paragraph [ref=e127]: 进展同步，内容上新
+            - generic [ref=e129]: 2025-01
+          - generic [ref=e131] [cursor=pointer]:
+            - generic [ref=e134]:
+              - generic [ref=e135]: Figma 设计资源上新
+              - paragraph [ref=e136]: 更多图标资源，全新的组件类型
+            - generic [ref=e138]: 2024-10
+          - generic [ref=e140] [cursor=pointer]:
+            - generic [ref=e143]:
+              - generic [ref=e144]: 技术报告：云上工厂建设报告6月刊
+              - paragraph [ref=e145]: 最新版本、提效数据、社区共创...均可一览
+            - generic [ref=e147]: 2024-07
+          - generic [ref=e149] [cursor=pointer]:
+            - generic [ref=e152]:
+              - generic [ref=e153]: 技术分享：TD x AI助手
+              - paragraph [ref=e154]: 腾讯专家教你用 AI 玩转TDesign
+            - generic [ref=e156]: 2024-06
+          - generic [ref=e158] [cursor=pointer]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: 技术动态：小程序深色模式上线
+              - paragraph [ref=e163]: 新的边界，穿越白天与黑夜！
+            - generic [ref=e165]: 2024-04
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - paragraph: 解决方案
+            - heading "桌面端" [level=3]
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: 开发资源
+                - generic [ref=e172]:
+                  - generic [ref=e173] [cursor=pointer]:
+                    - img [ref=e174]
+                    - generic [ref=e175]: Vue
+                    - generic [ref=e176]: Stable
+                  - generic [ref=e177] [cursor=pointer]:
+                    - img [ref=e178]
+                    - generic [ref=e179]: Vue Next
+                    - generic [ref=e180]: Stable
+                  - generic [ref=e181] [cursor=pointer]:
+                    - img [ref=e182]
+                    - generic [ref=e183]: React
+                    - generic [ref=e184]: Stable
+              - generic [ref=e186]:
+                - generic [ref=e187]: 设计资源
+                - generic [ref=e188]:
+                  - generic [ref=e189] [cursor=pointer]:
+                    - img [ref=e190]
+                    - generic [ref=e191]: Figma
+                  - generic [ref=e192] [cursor=pointer]:
+                    - img [ref=e193]
+                    - generic [ref=e194]: Sketch
+                  - generic [ref=e195] [cursor=pointer]:
+                    - img [ref=e196]
+                    - generic [ref=e197]: Axure
+                  - generic [ref=e198] [cursor=pointer]:
+                    - img [ref=e199]
+                    - generic [ref=e200]: AdobeXD
+          - generic [ref=e201]:
+            - paragraph: 解决方案
+            - heading "移动端" [level=3]
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: 开发资源
+                - generic [ref=e206]:
+                  - generic [ref=e207] [cursor=pointer]:
+                    - img [ref=e208]
+                    - generic [ref=e209]: Vue Next
+                    - generic [ref=e210]: Stable
+                  - generic [ref=e211] [cursor=pointer]:
+                    - img [ref=e212]
+                    - generic [ref=e213]: React
+                    - generic [ref=e214]: Alpha
+                  - generic [ref=e215] [cursor=pointer]:
+                    - img [ref=e216]
+                    - generic [ref=e217]: UniApp
+                    - generic [ref=e218]: Alpha
+                  - generic [ref=e219] [cursor=pointer]:
+                    - img [ref=e220]
+                    - generic [ref=e221]: Flutter
+                    - generic [ref=e222]: Alpha
+              - generic [ref=e224]:
+                - generic [ref=e225]: 设计资源
+                - generic [ref=e226]:
+                  - generic [ref=e227] [cursor=pointer]:
+                    - img [ref=e228]
+                    - generic [ref=e229]: Figma
+                  - generic [ref=e230] [cursor=pointer]:
+                    - img [ref=e231]
+                    - generic [ref=e232]: Sketch
+          - generic [ref=e233]:
+            - paragraph: 解决方案
+            - heading "小程序" [level=3]
+            - generic [ref=e235]:
+              - generic [ref=e236]:
+                - generic [ref=e237]: 开发资源
+                - generic [ref=e239] [cursor=pointer]:
+                  - img [ref=e240]
+                  - generic [ref=e241]: 微信小程序
+                  - generic [ref=e242]: Stable
+              - generic [ref=e244]:
+                - generic [ref=e245]: 设计资源
+                - generic [ref=e246]:
+                  - generic [ref=e247] [cursor=pointer]:
+                    - img [ref=e248]
+                    - generic [ref=e249]: Figma
+                  - generic [ref=e250] [cursor=pointer]:
+                    - img [ref=e251]
+                    - generic [ref=e252]: Sketch
+      - generic [ref=e253]:
+        - heading "开放" [level=3] [ref=e255] [cursor=pointer]
+        - heading "创造" [level=3] [ref=e258] [cursor=pointer]
+        - heading "共建" [level=3] [ref=e260] [cursor=pointer]
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - generic [ref=e267] [cursor=pointer]:
+                  - radio "vue" [checked]
+                  - generic [ref=e268]: vue
+                - generic [ref=e269] [cursor=pointer]:
+                  - radio "vue-next"
+                  - generic [ref=e270]: vue-next
+                - generic [ref=e271] [cursor=pointer]:
+                  - radio "react"
+                  - generic [ref=e272]: react
+                - generic [ref=e273] [cursor=pointer]:
+                  - radio "miniprogram"
+                  - generic [ref=e274]: miniprogram
+                - generic [ref=e275] [cursor=pointer]:
+                  - radio "mobile-vue"
+                  - generic [ref=e276]: mobile-vue
+                - generic [ref=e277] [cursor=pointer]:
+                  - radio "mobile-react"
+                  - generic [ref=e278]: mobile-react
+                - generic [ref=e279] [cursor=pointer]:
+                  - radio "flutter"
+                  - generic [ref=e280]: flutter
+              - list [ref=e282]:
+                - listitem [ref=e283]:
+                  - code [ref=e285]: npm i tdesign-vue
+                - listitem [ref=e286]:
+                  - code [ref=e288]: import Vue from 'vue';
+                - listitem [ref=e289]:
+                  - code [ref=e291]: import TDesign from 'tdesign-vue';
+                - listitem [ref=e292]:
+                  - code [ref=e294]: import 'tdesign-vue/es/style/index.css';
+                - listitem [ref=e295]:
+                  - code [ref=e297]: Vue.use(TDesign);
+            - list [ref=e299]:
+              - listitem [ref=e300]:
+                - img [ref=e301]
+                - heading "多技术栈版本实现" [level=3] [ref=e303]
+                - paragraph [ref=e304]: 支持业界主流的 React/Vue/微信小程序/Flutter 开发技术栈
+              - listitem [ref=e305]:
+                - img [ref=e306]
+                - heading "多端适配" [level=3] [ref=e308]
+                - paragraph [ref=e309]: 提供桌面端和移动端两套风格统一的组件资源
+              - listitem [ref=e310]:
+                - img [ref=e311]
+                - heading "丰富的行业组件" [level=3] [ref=e313]
+                - paragraph [ref=e314]: 由腾讯多个业务团队，基于统一的设计体系提供多个垂直领域的行业组件库产品
+          - generic [ref=e315]:
+            - heading "开源开放，持续迭代" [level=3] [ref=e316]
+            - paragraph [ref=e317]: 采用 MIT 许可协议，始终保持开放的心态，期待各方一起共建开源生态。
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e323]:
+                - img [ref=e325]
+                - textbox "请输入用户名" [ref=e329]
+              - generic [ref=e333]:
+                - generic [ref=e335]:
+                  - generic [ref=e336]: 市场部
+                  - img [ref=e337] [cursor=pointer]
+                - textbox
+                - img [ref=e340]
+              - generic [ref=e343]:
+                - generic [ref=e345] [cursor=pointer]:
+                  - checkbox "公司总部" [ref=e346]
+                  - generic [ref=e348]: 公司总部
+                - generic [ref=e349]:
+                  - img [ref=e351] [cursor=pointer]
+                  - generic [ref=e353] [cursor=pointer]:
+                    - checkbox "华东大区" [ref=e354]
+                    - generic [ref=e356]: 华东大区
+                - generic [ref=e358] [cursor=pointer]:
+                  - checkbox "市场部" [ref=e359]
+                  - generic [ref=e361]: 市场部
+                - generic [ref=e363] [cursor=pointer]:
+                  - checkbox "财务部" [ref=e364]
+                  - generic [ref=e366]: 财务部
+                - generic [ref=e367]:
+                  - img [ref=e369] [cursor=pointer]
+                  - generic [ref=e371] [cursor=pointer]:
+                    - checkbox "华南大区" [ref=e372]
+                    - generic [ref=e374]: 华南大区
+                - generic [ref=e376] [cursor=pointer]:
+                  - checkbox "市场部" [ref=e377]
+                  - generic [ref=e379]: 市场部
+                - generic [ref=e381] [cursor=pointer]:
+                  - checkbox "财务部" [ref=e382]
+                  - generic [ref=e384]: 财务部
+            - generic [ref=e387]:
+              - img "logo" [ref=e389]
+              - list [ref=e390]:
+                - listitem [ref=e391]:
+                  - generic [ref=e392] [cursor=pointer]:
+                    - img [ref=e393]
+                    - generic [ref=e395]: 仪表盘
+                    - img [ref=e396]
+                  - list [ref=e398]:
+                    - listitem [ref=e399] [cursor=pointer]:
+                      - generic [ref=e400]: 概览仪表盘
+                    - listitem [ref=e401] [cursor=pointer]:
+                      - generic [ref=e402]: 统计报表
+                - listitem [ref=e403]:
+                  - generic [ref=e404] [cursor=pointer]:
+                    - img [ref=e405]
+                    - generic [ref=e407]: 列表页
+                    - img [ref=e408]
+                - listitem [ref=e410]:
+                  - generic [ref=e411] [cursor=pointer]:
+                    - img [ref=e412]
+                    - generic [ref=e414]: 表单页
+                    - img [ref=e415]
+                - listitem [ref=e417]:
+                  - generic [ref=e418] [cursor=pointer]:
+                    - img [ref=e419]
+                    - generic [ref=e421]: 详情页
+                    - img [ref=e422]
+            - generic [ref=e424]:
+              - generic [ref=e425]:
+                - button "主要按钮" [ref=e426] [cursor=pointer]:
+                  - img [ref=e427]
+                  - generic [ref=e429]: 主要按钮
+                - button "按钮" [ref=e430] [cursor=pointer]:
+                  - generic [ref=e431]: 按钮
+                - button "按钮" [ref=e432] [cursor=pointer]:
+                  - generic [ref=e433]: 按钮
+              - slider [ref=e436]
+              - generic [ref=e441]:
+                - generic [ref=e447] [cursor=pointer]: 可选标签
+                - generic [ref=e449]: 默认标签
+              - generic [ref=e451]:
+                - generic [ref=e452] [cursor=pointer]:
+                  - radio "亮色" [checked]
+                  - generic [ref=e453]: 亮色
+                - generic [ref=e454] [cursor=pointer]:
+                  - radio "深色"
+                  - generic [ref=e455]: 深色
+                - generic [ref=e456] [cursor=pointer]:
+                  - radio "中性色"
+                  - generic [ref=e457]: 中性色
+          - list [ref=e482]:
+            - listitem [ref=e483]:
+              - img [ref=e484]
+              - heading "可扩展的设计风格" [level=3] [ref=e486]
+              - paragraph [ref=e487]: 将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+            - listitem [ref=e488]:
+              - img [ref=e489]
+              - heading "丰富的设计资源" [level=3] [ref=e491]
+              - paragraph [ref=e492]: 提供桌面和移动端 Sketch/Figma 等多种格式的设计资源
+            - listitem [ref=e493]:
+              - img [ref=e494]
+              - heading "专业的设计指南" [level=3] [ref=e496]
+              - paragraph [ref=e497]: 将设计经验提炼总结为指南，帮助使用者正确使用组件
+      - generic [ref=e500]:
+        - heading "行行可用，企业首选" [level=3] [ref=e501]
+        - heading "1580" [level=3] [ref=e502]:
+          - paragraph [ref=e503]:
+            - text: "1580"
+            - img [ref=e504]
+        - paragraph [ref=e506]: 不同行业产品已使用
+        - paragraph [ref=e507]: 从消费产品到金融服务，从 B 端到 C 端产品，从大品牌到个人开发者，TDesign 都能充分满足低成本，高效有品质感的前端设计和开发工作，助力提升产品体验，有效提升设计研发效能
+        - generic [ref=e509]:
+          - img [ref=e512]
+          - img [ref=e515]
+          - img [ref=e518]
+          - img [ref=e521]
+          - img [ref=e524]
+          - img [ref=e527]
+          - img [ref=e530]
+          - img [ref=e533]
+          - img [ref=e536]
+          - img [ref=e539]
+          - img [ref=e542]
+          - img [ref=e545]
+          - img [ref=e548]
+          - img [ref=e551]
+          - img [ref=e554]
+          - img [ref=e557]
+          - img [ref=e560]
+          - img [ref=e563]
+          - img [ref=e566]
+          - img [ref=e569]
+          - img [ref=e572]
+          - img [ref=e575]
+          - img [ref=e578]
+          - img [ref=e581]
+          - img [ref=e584]
+          - img [ref=e587]
+          - img [ref=e590]
+          - img [ref=e593]
+          - img [ref=e596]
+          - img [ref=e599]
+      - generic [ref=e600]:
+        - img "logo" [ref=e601]
+        - paragraph [ref=e602]: 与 TDesign，共生长
+        - paragraph [ref=e603]: 不止腾讯生态，更有质感，更稳定，更持续的 TDesign 助力更多行业和开发者，提升产品体验，提高设计研发效能，用 TDesign，更低成本，探索更多可能
+        - link "开始使用" [ref=e604] [cursor=pointer]:
+          - /url: https://github.com/Tencent/tdesign
+          - generic [ref=e605]: 开始使用
+      - generic [ref=e607]:
+        - generic [ref=e610]:
+          - generic [ref=e611]:
+            - generic [ref=e614]:
+              - generic [ref=e615]:
+                - generic [ref=e616] [cursor=pointer]:
+                  - img [ref=e618]
+                  - generic [ref=e621]: Vue 2
+                - generic [ref=e622] [cursor=pointer]:
+                  - img [ref=e624]
+                  - generic [ref=e627]: Vue 3
+                - generic [ref=e628] [cursor=pointer]:
+                  - img [ref=e630]
+                  - generic [ref=e632]: React
+              - generic [ref=e633]:
+                - generic [ref=e634] [cursor=pointer]:
+                  - img [ref=e636]
+                  - generic [ref=e638]: Flutter
+                - generic [ref=e639] [cursor=pointer]:
+                  - img [ref=e641]
+                  - generic [ref=e652]: Design
+              - generic [ref=e654] [cursor=pointer]:
+                - img [ref=e656]
+                - generic [ref=e659]: MiniProgram
+            - heading "企业微信群" [level=4] [ref=e660]
+            - paragraph [ref=e661]: 欢迎微信扫码联系我们
+          - generic [ref=e662]:
+            - paragraph [ref=e663]: 资源
+            - link "设计资源" [ref=e664] [cursor=pointer]:
+              - /url: /source
+            - link "TDesign Starter" [ref=e665] [cursor=pointer]:
+              - /url: https://tdesign.tencent.com/starter/
+          - generic [ref=e666]:
+            - paragraph [ref=e667]: 腾讯设计
+            - link "CoDesign" [ref=e668] [cursor=pointer]:
+              - /url: https://codesign.qq.com/
+            - link "TDesign" [ref=e669] [cursor=pointer]:
+              - /url: https://tdesign.tencent.com
+          - generic [ref=e670]:
+            - paragraph [ref=e671]: 关于
+            - link "关于我们" [ref=e672] [cursor=pointer]:
+              - /url: /about/introduce
+            - link "联系我们" [ref=e673] [cursor=pointer]:
+              - /url: /about/contact
+        - generic [ref=e675]:
+          - paragraph [ref=e676]: Copyright © 1998 - 2026 Tencent. All Rights Reserved. 腾讯公司 版权所有
+          - generic [ref=e677]:
+            - img [ref=e679]
+            - link [ref=e714] [cursor=pointer]:
+              - /url: https://cloud.tencent.com/
+              - img [ref=e715]
+```
